@@ -1,0 +1,235 @@
+{% extends 'base.html' %}
+  {% load static %}
+{% block content %}
+<div class="image_for_banner">
+  <img src ="{% static 'images/scales-justice-gavel-wooden-ta.png' %}">
+</div>
+<div class="services" style="background-image: url( {% static 'images/VI_BLACK_2000x2000_2-14.png' %}); background-size: contain;" >
+  <div class="container">
+    <div class="services_list">
+      <div class="service_heading_main">
+        
+        <div class="heading_services" style="">
+          <h1 style = "color: black; margin-top: 4%;  border-bottom: 2px solid goldenrod;">Our Services</h1>
+        </div>
+        <div class="heading_button">
+          <button class = 'btn btn-dark' style=" margin-top: 24%;"> View all <i class='bx bx-right-arrow-alt' style='color:goldenroad'></i></button>
+        </div>
+      </div>
+    <div class="circles_services">
+      <div class="services_circle"><p>Criminal Defence Litigation</div></p>
+      <div class="services_circle"><p>Criminal Cases</div></p>
+      <div class="services_circle"><p>Criminal Defence Litigation</div></p>
+      <div class="services_circle"><p>Criminal Defence Litigation</div></p>
+      <div class="services_circle"><p>Criminal Defence Litigation</div></p>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="quote_section" style="">
+  <div class="container">
+    <div class="heading_quote" style="">
+      <h1>We dont Advertise. We Empower</h1>
+    </div>
+    <div class="quote_para mt-4" style=" display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;width: 100%;" >
+    <p>
+      At VBB Legal, we believe in empowering our clients through excellence in legal representation. Our commitment to your success goes beyond conventional advertising; it is grounded in the tangible results we deliver and the transformative impact we have on the lives of those we serve.
+    </p>
+    <button class="btn btn-outline-primary">  Read more <i class='bx bx-right-arrow-alt' style='color:goldenroad'></i> </button>
+    </div>
+  </div>
+</div>
+<div class="placements_section">
+  <div class="textual_placements">
+
+    <h1>A place where exceptional performances thrive.</h1>
+    <p>The leaders and professionals at VBB Legal demonstrate outstanding expertise in their respective fields. Our team members are well-prepared and empowered to provide exceptional services. In addition to offering expert advice to clients both locally and internationally, we strongly believe in fostering the comprehensive growth of our individuals, contributing to the advancement of the Indian legal profession and community.</p>
+    <button class="btn btn-outline-dark">  Explore more <i class='bx bx-right-arrow-alt' style='color:goldenroad'></i> </button>
+    
+  </div>
+    <div class="image_secton">
+      <img src=" {% static 'images/asian-indian-business-people-c.png' %}" alt="">
+    </div>
+    
+  
+  
+</div>
+
+<div class="social_section">
+  <div class="container">
+   <div class="social_handle_heading">
+     <h1 style ="font-size: xx-large;color: goldenrod; border-bottom: 2px solid goldenrod;">OUR VIRTUAL PRESENCE</h1>
+    </div>
+   
+    <div class="social_handle_blocks">
+      <div class="social_handle block_instagram">
+        
+        
+          <div class="block">
+            <img src="{% static 'images/coworkers-working-office-desk-.png' %}" alt="Background Image" class="background-img">
+            <img src=" {% static 'images/instagram_2_dh@2x.png' %}" alt="Transparent Logo" class="logo">
+          </div>
+        
+      </div>
+      <div class="social_handle block_facebook">
+        <div class="block">
+          <img src="{% static 'images/team-indian-architects-builder.png' %}" alt="Background Image" class="background-img">
+          <img src=" {% static 'images/facebook_dk@2x.png' %}" alt="Transparent Logo" class="logo">
+        </div>
+      </div>
+      <div class="social_handle block_twitter">
+        <div class="block">
+         
+          <img src="  {% static 'images/two-smiling-female-coworkers-l@2x.png' %}" alt="Background Image" class="background-img">
+          <img src=" {% static 'images/Twitter-Log_dl@2x.png' %}" alt="Transparent Logo" class="logo">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="form_section">
+<div class="card">
+  <div class="container">
+    <center>
+      <h4>REQUEST CALL BACK</h4>
+    </center>
+    <form action="#" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="areaOfInterest" class="form-label">Area of Interest:</label>
+        <select id="areaOfInterest" name="areaOfInterest" class="form-select" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Mobile App Development">Mobile App Development</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Artificial Intelligence">Artificial Intelligence</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+      </div>
+<center>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</center>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- Caraousel -->
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.freepik.com/free-photo/closeup-shot-person-writing-book-with-gavel-table_181624-57173.jpg?w=1380&t=st=1691213196~exp=1691213796~hmac=2b489902c796964f2afc9f03eca8fd03a73f7cd47c1d8eb9e56eb02450ec576a" class="d-block w-80 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/4427630/pexels-photo-4427630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block  w-80 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/4427545/pexels-photo-4427545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-80 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Connect with us!</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> vbblegal@outlook.com</li>
+            <li><i class="fas fa-phone"></i>+91 8647598632</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Social Media Presence</h3>
+          <ul class="social-media">
+            <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <img style="width: 40%;" src =" {% static 'images//Mask_Group_1.png' %}">
+          {% static 'images//Mask_Group_1.png' %}
+         
+            <li style="color: white; list-style: none;">424, MOHID HEIGHTS, RTO Rd,</li>
+            <li style="color: white; list-style: none;"> Suresh Nagar,Andheri West, Mumbai, Maharashtra 400053.</li>
+          
+        </div>
+
+
+
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS and jQuery (for the responsive toggle button) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- Add this script tag at the bottom of your HTML file, just before the closing -->
+<!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
+{% endblock content %}

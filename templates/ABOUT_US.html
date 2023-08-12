@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .full_page{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: rgba(255,219,109,1) ;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
+        background-size: 100% 100%;
+    }
+    .data_quote{
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        align-items: center;
+        
+    }
+    .data_quote blockquote{
+        width: 100%;
+        font-size: xx-large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    blockquote {
+  padding: 5%; /* Add some space for the quote icon */
+  line-height: 1.5;
+}
+
+blockquote::before {
+  content: "\201C"; /* Unicode code point for opening double quotation mark */
+  font-size: 170%; /* Adjust size of the quote icon */
+  color: rgba(255,219,109,1) ; /* Change color of the quote icon */
+}
+
+blockquote::after {
+  content: "\201D"; /* Unicode code point for closing double quotation mark */
+  font-size: 170%; /* Adjust size of the quote icon */
+  color: rgba(255,219,109,1) ;  /* Change color of the quote icon */
+}
+.commitment_section{
+    display : flex ;
+    margin-top: 2.4%;
+    flex-direction: row;
+}
+.expertise_section{
+    display : flex ;
+    margin-top: 2.4%;
+    flex-direction: row;
+}
+.commitment{
+    width: 70%;
+    background-color: rgba(255,219,109,1) ;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+.exptertise{
+    width: 70%;
+    background-color: rgba(255,219,109,1) ;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.commitment h1 {
+    margin-left: 15%;
+}
+.exptertise h1{
+    margin-left: 5%;
+}
+.commitment p {
+    margin-left: 15%;
+}
+
+.exptertise p {
+    margin-left: 5%;
+}
+.commitment_icon{
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.expertise_icon {
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.commitment_icon img{
+    width: 40%;
+}
+.expertise_icon img{
+    width: 40%;
+}
+.area_of_expertise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    width: 100%;
+}
+.area_of_expertise h1 {
+    background-color: black;
+    color: rgba(255,191,0,1);
+    height: 10vh;
+    padding: 24px;
+    width: 100%;
+}
+.practice_area{
+    border: 2px solid rgba(255,191,0,1);
+    height: 36vh;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
+.first_section{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -25%;
+    width: 60%;
+    justify-content: space-between;
+    margin:1% ;
+
+}
+.second_section{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    margin:1% ;
+}
+.practice_block{
+    background-color:rgba(255,219,109,1) ;
+    border-radius: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 1%;
+    min-height: 8vh;
+    width: 20%;
+}
+.practice_block img {
+    width: 80%;
+}
+</style>
+<div class="full_page" style=" ">
+
+    <div class="container">
+        
+        <div class = 'about_usheading'>
+            <h1>About Us</h1>
+        </div>    
+    </div>
+</div>
+<div class="data_quote">
+<div class="container">
+        <blockquote>
+            Welcome to <b>VBB Legal</b>, your trusted partner in navigating the complexities of the legal world. With a tradition of trust and an unwavering commitment to excellence, we have been serving individuals and businesses with unparalleled legal representation.
+        </blockquote>
+    </div>
+</div>
+<div class="commitment_section">
+    <div class="commitment">
+        <h1>Our Commitment to You</h1>
+        <p>
+            At VBB Legal, we believe in putting our clients first. Your success and satisfaction are our top priorities. We take the time to understand your unique needs, concerns, and goals to craft personalized legal solutions that truly make a difference.
+        </p>
+    </div>
+    <div class="commitment_icon">
+        <img src="{% static 'images/handshake@2x.png' %}" alt="">
+    </div>
+</div>
+
+<div class="expertise_section">
+    <div class="expertise_icon">
+        <img src="{% static 'images/quality@2x.png' %}" alt="">
+    </div>
+    <div class="exptertise">
+        <h1>Experience and Expertise</h1>
+        <p>
+            Our team of highly skilled attorneys brings decades of collective experience to the table. With diverse expertise across a wide range of practice areas, we are well-equipped to handle even the most challenging legal matters.
+        </p>
+    </div>
+</div>
+
+<div class="commitment_section">
+    <div class="commitment">
+        <h1>Client-Centered Approach</h1>
+        <p>
+            Empowering you through clear communication and exceptional representation is at the core of our approach. We take pride in building lasting relationships with our clients, ensuring you feel supported and informed at every step of your legal journey.
+        </p>
+    </div>
+    <div class="commitment_icon">
+        <img src="{% static 'images/target-audience@2x.png' %}" alt="">
+    </div>
+</div>
+
+<div class="expertise_section">
+    <div class="expertise_icon">
+        <img src="{% static 'images/goal@2x.png' %}" alt="">
+    </div>
+    <div class="exptertise">
+        <h1>Proven Results</h1>
+        <p>
+            Our track record of success speaks volumes about our dedication to securing favorable outcomes for our clients. We measure our achievements by the trust and satisfaction of those we serve.
+        </p>
+    </div>
+</div>
+
+<div class="area_of_expertise">
+    <div class="heading_area_of_expertise">
+        <h1>Area of Expertise</h1>
+    </div>
+</div>
+<div class="container">
+    <p style="font-size: x-large;font-family: 'Times New Roman', Times, serif;">VBB Legal offers comprehensive legal services across various practice areas, including but not limited to:</p>
+</div>
+<div class="container">
+    <div class="practice_area">
+        <div class="first_section">
+            <div class="practice_block"> <img src="{% static 'images/family@2x.png' %}"alt=""></div>
+            <div class="practice_block"><img src="{% static 'images/corporate-laws@2x.png' %}" alt=""></div>
+            <div class="practice_block"><img src="{% static 'images/contract@2x.png' %}" alt=""></div>
+            <div class="practice_block"><img src="{% static 'images/job-search@2x.png' %}" alt=""></div>
+        </div>
+
+        <div class="second_section">
+            <div class="practice_block"> <img src="{% static 'images/copyright@2x.png' %}" alt=""></div>
+            <div class="practice_block"><img src="{% static 'images/law@2x.png' %}" alt=""></div>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="VBB_diff mb-5 mt-5">
+
+        <h1>
+            Experience the VBB Difference
+        </h1>
+        <br>
+        <br>
+        <p>
+            Choosing VBB Legal means choosing a team of passionate advocates who will fight for your rights and best interests. We are committed to turning your legal challenges into victories.
+            <br><br>
+            Contact us today to discover how VBB Legal can be your guide to a brighter legal future.
+        </p>
+        <div class="btn btn-primary" style="color: black;font-family: 'Times New Roman', Times, serif;"> <b>CONTACT NOW </b></div>
+    </div>
+</div>
+
+    {% endblock content %}
