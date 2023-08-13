@@ -1,307 +1,423 @@
+.nav-item .active {
+  color: goldenrod;
+}
 
-.nav-item .active{
-    color: goldenrod;
+.btn-outline-primary {
+  color: gold;
+  border-color: gold;
+}
+
+.btn-outline-primary:hover {
+  color: black;
+  border-color: gold;
+  background-color: gold;
+}
+
+.circles_services {
+  display: flex;
+  flex-direction: row;
+
+  padding: 6%;
+}
+
+.circles_services p {
+  font-size: 85%;
+  font-weight: 600;
+}
+
+.services_circle {
+  background-image: linear-gradient(-180deg, rgb(231, 215, 122), goldenrod);
+  border: 2px solid yellow;
+  height: 21vh;
+  border-radius: 50%;
+  margin: 1%;
+  padding: 1%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_heading_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-dark {
+  background-color: black;
+  font-size: medium;
+  width: 147%;
+  color: gold;
+}
+
+.request_a_call_back {
+  position: relative;
+  width: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+  /* filter: (0px 3px 6px rgba(255, 255, 255, 0.161)); */
+}
+
+/* Custom styles */
+.navbar {
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-brand img {
+  width: 65%;
+}
+
+.heading_services {
+  width: 17%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.quote_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* footer */
+
+
+/* Add your custom styles here */
+
+
+.image_for_banner {
+  width: 100%;
+}
+
+.image_for_banner img {
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  color: goldenrod;
+  padding: 20px;
+}
+
+.footer h3 {
+  color: goldenrod;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: goldenrod;
+  font-size: 20px;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+.placements_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: linear-gradient(-180deg, goldenrod, white);
+}
+
+.textual_placements {
+  width: 60%;
+  margin-left: 15%;
+  height: 50vh;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.image_secton {
+  display: flex;
+  height: 50vh;
+  background-color: azure;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+
+}
+
+.textual_placements p {
+  font-size: large;
+}
+
+.image_secton img {
+  width: 100%;
+  height: 50vh;
+}
+
+.quote_section {
+  background-color: black;
+  height: 40vh;
+  color: white;
+}
+
+.heading_quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 5.5px;
+}
+
+.quote_para p {
+  width: 50%;
+}
+
+.social_section {
+  background-color: black;
+  height: 60vh;
+  padding: 2%;
+}
+
+.social_handle_heading {
+  width: 28%;
+}
+
+.social_handle_blocks {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.social_handle {
+  background-color: goldenrod;
+  height: 34vh;
+  border: 5px solid rgb(82, 61, 8);
+  border-radius: 5%;
+  width: 30%;
+  margin: 1%;
+}
+
+.block {
+  position: relative;
+}
+
+.btn-primary {
+  background-color: goldenrod;
+  border: goldenrod;
+}
+
+
+.btn-primary:hover {
+  background-color: goldenrod;
+  border: goldenrod;
+}
+
+.background-img {
+  width: 100%;
+  height: 34vh;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5%;
+  opacity: 0.6;
+  /* Adjust the opacity as needed */
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  /* Adjust the logo size as needed */
+  /* You can add more styles for the logo, such as border-radius, box-shadow, etc. */
+}
+
+.card {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 35%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 2%;
+  padding: 3%;
+}
+
+.form_section {
+  background-image: url("./Maps_BG@2x.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Hide the toggle button on larger screens */
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
   }
-  .btn-outline-primary{
-    color: gold;
-    border-color: gold;
+
+  .navbar-toggler {
+    border: 2px solid white;
+
+
   }
-  
-  .btn-outline-primary:hover{
-    color: black;
-    border-color: gold;
-    background-color: gold;
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 3.6rem
   }
-  
-  .circles_services{
-    display: flex;
-    flex-direction: row;
-    
-    padding:6%;
-  }
-  
-  .circles_services p{
-    font-size: 85%;
-    font-weight: 600;
-  }
-  
-  .services_circle{
-    background-image: linear-gradient(-180deg, rgb(231, 215, 122), goldenrod);
-    border: 2px solid yellow;
-    height: 21vh;
-    border-radius: 50%;
-    margin: 1%;
-    padding:1%;
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .service_heading_main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .btn-dark{
-    background-color: black;
-   font-size: medium;
-   width: 147%;
-   color: gold;
-  }
-  .request_a_call_back{
-    position: relative;
-    width: 25%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: goldenrod;
-    /* filter: (0px 3px 6px rgba(255, 255, 255, 0.161)); */
-  }
-  /* Custom styles */
-      .navbar {
-        background-color: black;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: x-large;
-      }
-  
-      .navbar-brand, .navbar-nav .nav-link {
-        color: #fff;
-      }
-  
-      .navbar-nav {
-        margin-left: auto;
-      }
-      .navbar-brand img{
-        width: 65%;
-      }
-  
-      .heading_services{
-        width: 17%; font-family: 'Times New Roman', Times, serif;  
-      }
-      .quote_section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-  
-  
-  
-      /* footer */
-  
-  
-      /* Add your custom styles here */
-  
-  
-      .image_for_banner{
-        width: 100%;
-      }
-  
-      .image_for_banner img{
-        width: 100%;
-      }
-  .footer {
-    background-color: black;
-    color: goldenrod;
-    padding: 20px;
-  }
-  
-  .footer h3 {
-    color: goldenrod;
-  }
-  
-  .social-media li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .social-media a {
-    color: goldenrod;
-    font-size: 20px;
-  }
-  
-  .contact-info {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact-info li {
-    margin-bottom: 10px;
-  }
-  
-  .contact-info i {
-    margin-right: 5px;
-  }
-  
-  .placements_section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background-image: linear-gradient(-180deg, goldenrod, white);
-  }
-  
-  .textual_placements{
-    width: 60%;
-    margin-left: 15%;
-    height: 50vh;
-    display: flex;
-    text-align: left;
+
+
+
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
     flex-direction: column;
-    justify-content:space-evenly;
-    align-items: flex-start;
   }
-  .image_secton{
-    display: flex;
+
+}
+
+@media (max-width: 768px) {
+body{
+  overflow-x: hidden;
+}
+  .request_a_call_back {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    width: 35%;
+  }
+
+  .btn-dark {
+    background-color: black;
+    font-size: small;
+    width: 100%;
+  }
+
+ 
+
+  .quote_section {
     height: 50vh;
-    background-color: azure;
-    justify-content: flex-start;
-    align-items:center;
-    width:40%;
-   
+    color: white;
   }
-  
-  .textual_placements p{
+
+  .heading_services {
+    width: 42%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .heading_quote h1{
     font-size: large;
   }
-  .image_secton img{
+  .quote_para p {
     width: 100%;
-    height: 50vh;
-  }
-  .quote_section{
-    background-color: black;height: 40vh; color: white;
-  }
-  .heading_quote{
-    display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; letter-spacing: 5.5px;
-  }
-  .quote_para p{
-        width: 50%;
-      }
-      .social_section{
-        background-color: black;
-        height: 60vh;
-        padding: 2%;
-      }
-  .social_handle_heading{
-    width: 28%;
-  }
-      .social_handle_blocks{
-        display: flex;
-        position: relative;
-        flex-direction: row;
-      }
-      .social_handle{
-        background-color: goldenrod;
-        height: 34vh;
-        border: 5px solid rgb(82, 61, 8) ;
-        border-radius: 5%;
-        width: 30%;
-        margin: 1%;
-      }
-      .block {
-    position: relative;
-  }
-  .btn-primary{
-    background-color: goldenrod;
-    border: goldenrod;
-  }
-  
-  
-  .btn-primary:hover{
-    background-color: goldenrod;
-    border: goldenrod;
-  }
-  .background-img {
-    width: 100%;
-    height: 34vh;
-    object-fit: cover;
-    z-index: -1;
-     border-radius: 5%;
-    opacity: 0.6; /* Adjust the opacity as needed */
-  }
-  
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px; /* Adjust the logo size as needed */
-    /* You can add more styles for the logo, such as border-radius, box-shadow, etc. */
-  }
-  .card{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 35%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 2%;
-    padding: 3%;
-  }
-  .form_section{
-    background-image: url("./Maps_BG@2x.png");
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-  
-  }
-  
-  
-      /* Hide the toggle button on larger screens */
-      @media (min-width: 768px) {
-        .navbar-toggler {
-          display: none;
-        }
-        .navbar-toggler{
-          border: 2px solid white;
-  
-          
-        }
-  
-        .navbar-expand-md .navbar-nav .nav-link {
-            padding-right: 0.5rem;
-            padding-left: 3.6rem
-          }
-  
-        
-         
-  .navbar-expand-md .navbar-collapse {
-      display: flex!important;
-      flex-basis: auto;
-      flex-direction: column;
-  }
-  
-        }
-        @media (max-width: 768px) {
-          
-          .request_a_call_back {
-            width: 100%;
-          }
-          .navbar-brand img{
-        width: 35%;
-      }
-      .btn-dark{
-    background-color: black;
-   font-size: small;
-   width: 100%;
-  }
-      .quote_para p{
-        width: 100%;
-      }
-      .quote_section{
-    height: 54vh; color: white;
-  }
-  .heading_services{
-        width: 42%; font-family: 'Times New Roman', Times, serif;  
-      }
-      .circles_services{
-        overflow: scroll;
-      }
-        }
+    font-size: small;
+}
+.circles_services {
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+}
+.services_circle {
+  background-image: linear-gradient(-180deg, rgb(231, 215, 122), goldenrod);
+  border: 2px solid yellow;
+  height: 16vh;
+  border-radius: 4%;
+  margin: 1%;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.placements_section {
+  height: 58vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+.textual_placements {
+  overflow: hidden;
+  width: 80%;
+  height: 35vh;
+}
+.textual_placements h1{
+  font-size: large;
+}
+
+.textual_placements p{
+  font-size: small;
+}
+.image_secton {
+  display: flex;
+  height: 24vh;
+  background-color: azure;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.image_secton img {
+  width: 100%;
+  height: 24vh;
+}
+.social_handle_blocks {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.social_handle {
+  background-color: goldenrod;
+  height: 34vh;
+  border: 5px solid rgb(82, 61, 8);
+  border-radius: 5%;
+  width: 100%;
+  margin: 1%;
+}
+.social_handle_heading {
+  width: 65%;
+}
+.social_section {
+  background-color: black;
+  height: 127vh;
+  padding: 3%;
+}
+.card{
+  width: 95%;
+}
+.form_section{
+  padding: 5%;
+}
+}
