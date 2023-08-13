@@ -98,10 +98,10 @@ blockquote::after {
 }
 
 .commitment_icon img{
-    width: 40%;
+    width: 30%;
 }
 .expertise_icon img{
-    width: 40%;
+    width: 30%;
 }
 .area_of_expertise{
     display: flex;
@@ -160,6 +160,106 @@ blockquote::after {
 }
 .practice_block img {
     width: 80%;
+}
+
+@media (max-width: 768px){
+    .data_quote blockquote{
+        width: 100%;
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .commitment h1 {
+    margin-left: 5%;
+    font-size: 100%;
+}
+.exptertise h1{
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+.commitment p {
+    margin-left: 5%;
+    font-size: 70%;
+}
+
+.exptertise p {
+    margin-left: 5%;
+    font-size: 70%;
+}
+
+
+.commitment{
+    width: 70%;
+    background-color: rgba(255,219,109,1) ;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+.exptertise{
+    width: 70%;
+    background-color: rgba(255,219,109,1) ;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.commitment_icon{
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.expertise_icon {
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.first_section {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -25%;
+    width: 89%;
+    justify-content: space-between;
+    margin: 0%;
+}
+.second_section {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    justify-content: space-around;
+    margin: 0%;
+}
+.practice_block {
+    background-color: rgba(255,219,109,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    margin: 1%;
+    min-height: 8vh;
+    width: 19%;
+}
+.practice_area {
+    border: 2px solid rgba(255,191,0,1);
+    height: 24vh;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
 }
 </style>
 <div class="full_page" style=" ">
