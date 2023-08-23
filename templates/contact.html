@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .full_page{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: rgba(255,219,109,1) ;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
+        background-size: 100% 100%;
+    }
+    .card{
+        margin: 3%;
+        width: 70%;
+    }
+    .for_background{
+        background-image: url("{% static 'images/Maps_BG@2x.png' %}");  
+        background-size: 100% 100%;
+    }
+    .li > h5 > p{
+        font-size: smaller;
+    }
+</style>
+<div class="for_background">
+<div class="full_page" style=" ">
+
+    <div class="container">
+        
+        <div class = 'about_usheading'>
+            <h1>Contact Us</h1>
+        </div>    
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="form_section">
+        <div class="card">
+          <div class="container">
+            <center>
+              <h4>GET IN TOUCH</h4>
+            </center>
+            <form method="POST" action="/">
+              {% csrf_token %}
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+        
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
+              </div>
+        
+              <div class="mb-3">
+                <label for="email" class="form-label">Email ID:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+              </div>
+        <center>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </center>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+            <h4>
+                Address:
+            </h4>
+            <ul style="list-style: disc; ">
+            <li style="color: goldenrod;"><h5 style = 'color: black !important;'>Mumbai:<br>
+               <p style = 'color: black !important;font-size: small;'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus numquam id </p>
+         </h5></li>
+            <li style="color: goldenrod;"><h5 style = 'color: black !important;'>Navi Mumbai <p style = 'color: black !important;font-size: small;'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus numquam id </p></h5></li>
+        </ul>
+            <img src ='https://img.freepik.com/free-vector/directional-streets-names-city-map_23-2148309623.jpg?w=1380&t=st=1692810504~exp=1692811104~hmac=cf03a16656bcd2cf8980c527dbcefc4a6afad5cc42d07efacd38908fd63473d9'>
+        
+        <button class="btn btn-primary mt-2">Get Direction</div>
+        </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

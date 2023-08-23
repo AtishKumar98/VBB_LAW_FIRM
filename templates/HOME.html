@@ -102,7 +102,8 @@
     <center>
       <h4>REQUEST CALL BACK</h4>
     </center>
-    <form action="#" method="post">
+    <form method="POST" action="/">
+      {% csrf_token %}
       <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
         <input type="text" id="name" name="name" class="form-control" required>

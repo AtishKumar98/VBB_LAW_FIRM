@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn-primary{
+        color: black;
+    }
+     .full_page{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: rgba(255,219,109,1) ;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
+        background-size: 100% 100%;
+    }
+    .data_quote{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 4%;
+        align-items: center;
+        
+    }
+    .data_quote blockquote{
+        width: 70%;
+        font-size: x-large;;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    blockquote {
+  /* padding: 2%; Add some space for the quote icon */
+  /* line-height: 1.5; */
+}
+
+blockquote::before {
+  content: "\201C"; /* Unicode code point for opening double quotation mark */
+  font-size: 170%; /* Adjust size of the quote icon */
+  color: rgba(255,219,109,1) ; /* Change color of the quote icon */
+}
+
+blockquote::after {
+  content: "\201D"; /* Unicode code point for closing double quotation mark */
+  font-size: 170%; /* Adjust size of the quote icon */
+  color: goldenrod ;  /* Change color of the quote icon */
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin: 2%;
+    border: none;
+    box-shadow: none;
+}
+.card img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-right-radius:25px ;
+}
+.card-title{
+    text-align:left ;
+}
+
+.area_of_expertise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    width: 100%;
+}
+.area_of_expertise button {
+    width: 250px;
+  height:70px;
+  transform: skewX(-20deg); /* Skew the button */
+    background-color: black;
+    color: rgba(255,191,0,1);
+
+}
+
+.area_of_expertise button h5 {
+  transform: skewX(20deg); /* Skew the button */
+   
+
+}
+</style>
+<div class="full_page" style=" ">
+
+    <div class="container">
+        
+        <div class = 'about_usheading'>
+            <h1>Our Team</h1>
+        </div>    
+    </div>
+</div>
+<div class="container">
+<div class="data_quote">
+        <blockquote> Welcome to <b>VBB Legal</b> your trusted partner in navigating the complexities of the legal world. With a tradition of trust and an unwavering commitment to excellence. we have been serving individuals and businesses with unparalleled legal representation.
+        </blockquote>
+    </div>
+</div>
+
+<div class="container">
+    <div class="team">
+        <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vinayak Mishra</h5>
+                <p class="card-text"><b>Founder</b></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+             
+            </ul>
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Visit Profile</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vinayak Mishra</h5>
+              <p class="card-text">Founder</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+             
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Visit Profile</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="area_of_expertise">
+    <div class="heading_area_of_expertise">
+        <button>
+            <h5>
+           Core Team
+        </h5>
+    </button>
+    </div>
+</div>
+<div class="team">
+    <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Vinayak Mishra</h5>
+            <p class="card-text"><b>Founder</b></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+         
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">Visit Profile</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vinayak Mishra</h5>
+          <p class="card-text">Founder</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+         
+        </ul>
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Visit Profile</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vinayak Mishra</h5>
+          <p class="card-text">Founder</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+         
+        </ul>
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Visit Profile</a>
+        </div>
+      </div>
+</div>
+{% endblock content %}
