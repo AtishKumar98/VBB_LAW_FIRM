@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+     .full_page{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: rgba(255,219,109,1) ;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
+        background-size: 100% 100%;
+    }
+    .image_section{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .about_profile{
+        width: 80%;
+    }
+    .image_section img {
+        width: 100%;
+    }
+    .section_left{
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+    }
+</style>
+<div class="full_page" style=" ">
+
+    <div class="container">
+        
+        <div class = 'about_usheading'>
+            <h1>Our Team</h1>
+        </div>    
+    </div>
+</div>
+
+<div class="container mt-3">
+
+    <h7><b>Our Team / {{profile.name}}</b></h7>
+
+<div class="section_left mt-5">
+
+<div class="image_section">
+    <img src="{{profile.image}}" alt="{{profile.name}}">
+    <div class="profile_name"><b>{{profile.name}}</b></div>
+    <div class="profile_role"><b>{{ profile.role }}</b></div>
+</div>
+
+   
+    
+    <div class="about_profile mt-5">
+        <div class="about_heading"><h1>About Me</h1></div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{ profile.description|safe }}</li>
+            
+        </ul>
+    </div>
+</div>
+</div>
+{% endblock content %}
