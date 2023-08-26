@@ -3,6 +3,7 @@
 {% block content %}
 <style>
     .btn-primary{
+      background-color: rgba(255,219,109,1);
         color: black;
     }
      .full_page{
@@ -51,12 +52,28 @@ blockquote::after {
 }
 .card{
     margin: 2%;
+    width: 30%;
+    border: none;
+    box-shadow: none;
+}
+
+.main_team .team .card{
+    margin: 2%;
+    width: 30%;
+    border: none;
+    box-shadow: none;
+}
+ .team .card{
+    margin: 2%;
+    width: 20%;
     border: none;
     box-shadow: none;
 }
 .card img {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-top-right-radius:25px ;
+    background-color: goldenrod;
+    width: 80%;
 }
 .card-title{
     text-align:left ;
@@ -84,6 +101,11 @@ blockquote::after {
    
 
 }
+
+
+@media (max-width: 768px){
+
+}
 </style>
 <div class="full_page" style=" ">
 
@@ -96,47 +118,51 @@ blockquote::after {
 </div>
 <div class="container">
 <div class="data_quote">
-        <blockquote> Welcome to <b>VBB Legal</b> your trusted partner in navigating the complexities of the legal world. With a tradition of trust and an unwavering commitment to excellence. we have been serving individuals and businesses with unparalleled legal representation.
+        <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal professionals who are dedicated to providing comprehensive and innovative legal solutions. Our diverse and experienced team is committed to delivering excellence in every aspect of the law. Here, you'll find a group of talented individuals who bring a wealth of knowledge, passion, and dedication to our clients' legal needs.
         </blockquote>
     </div>
 </div>
 
 <div class="container">
+  <div class="main_team">
+
     <div class="team">
-        <div class="card" style="width: 18rem;">
-            <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Vinayak Mishra</h5>
+      <div class="card" style="">
+        <img src="../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png" class="card-img-top" style="width: 78%;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vinayak Mishra</h5>
                 <p class="card-text"><b>Founder</b></p>
-            </div>
+              </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
-             
+              <li class="list-group-item">Advocate Bombay High Court
+                and Supreme Court of India.</li>
+                
             </ul>
             <div class="card-body">
-                <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary">Visit Profile</a>
+              <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary">Visit Profile</a>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
+          
+          <div class="card" style="">
+            <img src="../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Vinayak Mishra</h5>
-              <p class="card-text">Founder</p>
+              <h5 class="card-title">Adv. Binita Y. Sharma</h5>
+              <p class="card-text"><b>Co-Founder</b></p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
-             
+              <li class="list-group-item">Advocate Bombay High Court <br> and Supreme Court of India.</li>
+              
             </ul>
             <div class="card-body">
               <a href="{% url 'profile_view' 'profile2' %}" class="btn btn-primary">Visit Profile</a>
             </div>
           </div>
+        </div>
+      </div>
+      
     </div>
-</div>
-
-<div class="area_of_expertise">
-    <div class="heading_area_of_expertise">
+      <div class="area_of_expertise">
+        <div class="heading_area_of_expertise">
         <button>
             <h5>
            Core Team
@@ -145,48 +171,41 @@ blockquote::after {
     </div>
 </div>
 <div class="team">
-    <div class="card" style="width: 18rem;">
-        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Vinayak Mishra</h5>
-            <p class="card-text"><b>Founder</b></p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-         
-        </ul>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary">Visit Profile</a>
-        </div>
-      </div>
+  <div class="card" style="">
+    <img src="../static/images/BD_Tripathi-removebg-preview_by@2x.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">B D Tripathi</h5>
+      <p class="card-text"><b>Advocate Bombay High Court
+        and Supreme Court of India.</b></p>
+    </div>
+   
+    <div class="card-body">
+      <a href="{% url 'profile_view' 'profile3' %}" class="btn btn-primary">Visit Profile</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Vinayak Mishra</h5>
-          <p class="card-text">Founder</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-         
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Visit Profile</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Vinayak Mishra</h5>
-          <p class="card-text">Founder</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-         
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Visit Profile</a>
-        </div>
-      </div>
+  <div class="card" style="">
+    <img src="../static/images/Pritesh_H_Sahu__legal_Executiv@2x.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pritesh H. Sahu</h5>
+      <p class="card-text"><b>Advocate Bombay High Court</b></p>
+    </div>
+    
+    <div class="card-body">
+      <a href="{% url 'profile_view' 'profile4' %}" class="btn btn-primary">Visit Profile</a>
+    </div>
+  </div>
+  <div class="card" style="">
+    <img src="../static/images/BD_Tripathi-removebg-preview_by@2x.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Adv. Himanshu S. Mishra</h5>
+      <p class="card-text"><b>Advocate Bombay High Court
+        and Allahabad High Court</b></p>
+    </div>
+    
+    <div class="card-body">
+      <a href="{% url 'profile_view' 'profile5' %}" class="btn btn-primary">Visit Profile</a>
+    </div>
+  </div>
 </div>
 {% endblock content %}

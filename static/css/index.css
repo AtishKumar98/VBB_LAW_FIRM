@@ -150,14 +150,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100%;
   background-image: linear-gradient(-180deg, goldenrod, white);
 }
 
 .textual_placements {
-  width: 60%;
+  width: 70%;
   margin-left: 15%;
-  height: 50vh;
+  height: 100%;
   display: flex;
   text-align: left;
   flex-direction: column;
@@ -167,7 +167,7 @@
 
 .image_secton {
   display: flex;
-  height: 50vh;
+  height: 100%;
   background-color: azure;
   justify-content: flex-start;
   align-items: center;
@@ -176,12 +176,16 @@
 }
 
 .textual_placements p {
-  font-size: large;
+  font-size: medium;
+  width: 90%;
 }
-
+.textual_placements h1{
+  font-size: xx-large;
+  width: 60%;
+}
 .image_secton img {
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
 
 .quote_section {
@@ -284,7 +288,7 @@
 
 
 /* Hide the toggle button on larger screens */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-toggler {
     display: none;
   }
@@ -365,33 +369,38 @@ body{
   align-items: center;
 }
 .placements_section {
-  height: 58vh;
+  height: 100%;
+  min-height: 70vh;
   flex-direction: column;
   overflow: hidden;
+  margin-bottom: 1%;
 }
 .textual_placements {
   overflow: hidden;
-  width: 80%;
-  height: 35vh;
+  width: 100%;
+  height: 100%;
 }
 .textual_placements h1{
   font-size: large;
+  margin-top: 5%;
 }
 
 .textual_placements p{
-  font-size: small;
+  width: 80%;
+  font-size: smaller;
+  margin-top: 1%;
 }
 .image_secton {
   display: flex;
-  height: 24vh;
-  background-color: azure;
+  height: 100%;
+  margin-top: 4%;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
 .image_secton img {
   width: 100%;
-  height: 24vh;
+  height: 100%;
 }
 .social_handle_blocks {
   display: flex;
@@ -411,7 +420,7 @@ body{
 }
 .social_section {
   background-color: black;
-  height: 127vh;
+  height: 165vh;
   padding: 3%;
 }
 .card{
@@ -419,5 +428,10 @@ body{
 }
 .form_section{
   padding: 5%;
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 }

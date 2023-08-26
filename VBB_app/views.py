@@ -57,7 +57,7 @@ profiles = {
     'profile1': {
         'name': 'Vinayak Mishra',
         'role': 'Founder',
-        'image':'https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6',
+        'image':'/../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png',
         'description': """
     <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 
@@ -80,9 +80,84 @@ profiles = {
 ,
     },
     'profile2': {
-        'name': 'Another Person',
-        'role': 'Another Role',
-        'image':'https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg?w=826&t=st=1692806308~exp=1692806908~hmac=7a124c93201d94d38eb839318867c5c4cb4cbc506cf95f1a48b38c65df3dd5e6',
+        'name': 'Adv. Binita Y. Sharma',
+        'role': 'Co-Founder',
+        'image':'/../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png',
+        'description':"""
+    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
+
+    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+
+    <h5>A Noble Profession:</h2>
+
+    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
+
+    <h5>Education and Training:</h2>
+
+    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
+
+    <!-- Add more content as needed -->
+
+    <h5>Conclusion:</h2>
+
+    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+""" ,
+    },
+
+     'profile3': {
+        'name': 'B D Tripathi',
+        'role': 'Lawyer Core-Team',
+        'image':'/../static/images/BD_Tripathi-removebg-preview_by@2x.png',
+        'description':"""
+    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
+
+    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+
+    <h5>A Noble Profession:</h2>
+
+    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
+
+    <h5>Education and Training:</h2>
+
+    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
+
+    <!-- Add more content as needed -->
+
+    <h5>Conclusion:</h2>
+
+    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+""" ,
+    },
+
+     'profile4': {
+        'name': 'Pritesh H. Sahu',
+        'role': 'Lawyer Core-Team',
+        'image':'/../static/images/Pritesh_H_Sahu__legal_Executiv@2x.png',
+        'description':"""
+    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
+
+    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+
+    <h5>A Noble Profession:</h2>
+
+    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
+
+    <h5>Education and Training:</h2>
+
+    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
+
+    <!-- Add more content as needed -->
+
+    <h5>Conclusion:</h2>
+
+    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+""" ,
+    },
+
+     'profile5': {
+        'name': 'Adv. Himanshu S. Mishra',
+        'role': 'Lawyer Core-Team',
+        'image':'/../static/images/BD_Tripathi-removebg-preview_by@2x.png',
         'description':"""
     <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 
