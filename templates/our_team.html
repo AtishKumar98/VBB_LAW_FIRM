@@ -2,125 +2,175 @@
 {% load static %}
 {% block content %}
 <style>
-    .btn-primary{
-      background-color: rgba(255,219,109,1);
-        color: black;
-    }
-     .full_page{
-        display: flex;
-        justify-content: center;
-        align-items:center ;
-        color: rgba(255,219,109,1) ;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 900;
-        height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
-        background-size: 100% 100%;
-    }
-    .data_quote{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin-top: 4%;
-        align-items: center;
-        
-    }
-    .data_quote blockquote{
-        width: 70%;
-        font-size: x-large;;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    blockquote {
-  /* padding: 2%; Add some space for the quote icon */
-  /* line-height: 1.5; */
-}
+  .btn-primary {
+    background-color: rgba(255, 219, 109, 1);
+    color: black;
+  }
 
-blockquote::before {
-  content: "\201C"; /* Unicode code point for opening double quotation mark */
-  font-size: 170%; /* Adjust size of the quote icon */
-  color: rgba(255,219,109,1) ; /* Change color of the quote icon */
-}
+  .full_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 219, 109, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    height: 10vh;
+    background-image: url("{% static 'images/about_us_bg.png' %}");
+    background-size: 100% 100%;
+  }
 
-blockquote::after {
-  content: "\201D"; /* Unicode code point for closing double quotation mark */
-  font-size: 170%; /* Adjust size of the quote icon */
-  color: goldenrod ;  /* Change color of the quote icon */
-}
-.team{
+  .data_quote {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4%;
+    align-items: center;
+
+  }
+
+  .data_quote blockquote {
+    width: 70%;
+    font-size: x-large;
+    ;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  blockquote {
+    /* padding: 2%; Add some space for the quote icon */
+    /* line-height: 1.5; */
+  }
+
+  blockquote::before {
+    content: "\201C";
+    /* Unicode code point for opening double quotation mark */
+    font-size: 170%;
+    /* Adjust size of the quote icon */
+    color: rgba(255, 219, 109, 1);
+    /* Change color of the quote icon */
+  }
+
+  blockquote::after {
+    content: "\201D";
+    /* Unicode code point for closing double quotation mark */
+    font-size: 170%;
+    /* Adjust size of the quote icon */
+    color: goldenrod;
+    /* Change color of the quote icon */
+  }
+
+  .team {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.card{
-    margin: 2%;
-    width: 30%;
-    border: none;
-    box-shadow: none;
-}
+  }
 
-.main_team .team .card{
+  .card {
     margin: 2%;
     width: 30%;
     border: none;
     box-shadow: none;
-}
- .team .card{
+  }
+
+  .main_team .team .card {
+    margin: 2%;
+    width: 30%;
+    border: none;
+    box-shadow: none;
+  }
+
+  .team .card {
     margin: 2%;
     width: 20%;
     border: none;
     box-shadow: none;
-}
-.card img {
+  }
+
+  .card img {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-top-right-radius:25px ;
+    border-top-right-radius: 25px;
     background-color: goldenrod;
     width: 80%;
-}
-.card-title{
-    text-align:left ;
-}
+  }
 
-.area_of_expertise{
+  .card-title {
+    text-align: left;
+  }
+
+  .area_of_expertise {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 5%;
     width: 100%;
-}
-.area_of_expertise button {
+  }
+
+  .area_of_expertise button {
     width: 250px;
-  height:70px;
-  transform: skewX(-20deg); /* Skew the button */
+    height: 70px;
+    transform: skewX(-20deg);
+    /* Skew the button */
     background-color: black;
-    color: rgba(255,191,0,1);
+    color: rgba(255, 191, 0, 1);
 
+  }
+
+  .area_of_expertise button h5 {
+    transform: skewX(20deg);
+    /* Skew the button */
+
+
+  }
+
+
+  @media (max-width: 768px) {
+
+    .team {
+      flex-direction: column;
+      width: 100%;
+    }
+
+
+    .main_team .team .card {
+      width: 100%;
+      margin-left: 8%;
+
+    }
+
+    .team .card {
+    margin-left: 8%;
+
+    width: 100%;
+    border: none;
+    box-shadow: none;
 }
 
-.area_of_expertise button h5 {
-  transform: skewX(20deg); /* Skew the button */
-   
+.data_quote blockquote {
+    width: 100%;
+    font-size: 100%;
+    ;
+    font-family: 'Times New Roman', Times, serif;
+  }
 
-}
-
-
-@media (max-width: 768px){
-
-}
+  }
 </style>
 <div class="full_page" style=" ">
 
-    <div class="container">
-        
-        <div class = 'about_usheading'>
-            <h1>Our Team</h1>
-        </div>    
+  <div class="container">
+
+    <div class='about_usheading'>
+      <h1>Our Team</h1>
     </div>
+  </div>
 </div>
 <div class="container">
-<div class="data_quote">
-        <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal professionals who are dedicated to providing comprehensive and innovative legal solutions. Our diverse and experienced team is committed to delivering excellence in every aspect of the law. Here, you'll find a group of talented individuals who bring a wealth of knowledge, passion, and dedication to our clients' legal needs.
-        </blockquote>
-    </div>
+  <div class="data_quote">
+    <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal
+      professionals who are dedicated to providing comprehensive and innovative legal solutions. Our diverse and
+      experienced team is committed to delivering excellence in every aspect of the law. Here, you'll find a group of
+      talented individuals who bring a wealth of knowledge, passion, and dedication to our clients' legal needs.
+    </blockquote>
+  </div>
 </div>
 
 <div class="container">
@@ -128,47 +178,48 @@ blockquote::after {
 
     <div class="team">
       <div class="card" style="">
-        <img src="../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png" class="card-img-top" style="width: 78%;" alt="...">
+        <img src="../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png" class="card-img-top" style="width: 78%;"
+          alt="...">
         <div class="card-body">
           <h5 class="card-title">Vinayak Mishra</h5>
-                <p class="card-text"><b>Founder</b></p>
-              </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Advocate Bombay High Court
-                and Supreme Court of India.</li>
-                
-            </ul>
-            <div class="card-body">
-              <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary">Visit Profile</a>
-            </div>
-          </div>
-          
-          <div class="card" style="">
-            <img src="../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adv. Binita Y. Sharma</h5>
-              <p class="card-text"><b>Co-Founder</b></p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Advocate Bombay High Court <br> and Supreme Court of India.</li>
-              
-            </ul>
-            <div class="card-body">
-              <a href="{% url 'profile_view' 'profile2' %}" class="btn btn-primary">Visit Profile</a>
-            </div>
-          </div>
+          <p class="card-text"><b>Founder</b></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Advocate Bombay High Court
+            and Supreme Court of India.</li>
+
+        </ul>
+        <div class="card-body">
+          <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary">Visit Profile</a>
         </div>
       </div>
-      
+
+      <div class="card" style="">
+        <img src="../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adv. Binita Y. Sharma</h5>
+          <p class="card-text"><b>Co-Founder</b></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Advocate Bombay High Court <br> and Supreme Court of India.</li>
+
+        </ul>
+        <div class="card-body">
+          <a href="{% url 'profile_view' 'profile2' %}" class="btn btn-primary">Visit Profile</a>
+        </div>
+      </div>
     </div>
-      <div class="area_of_expertise">
-        <div class="heading_area_of_expertise">
-        <button>
-            <h5>
-           Core Team
-        </h5>
+  </div>
+
+</div>
+<div class="area_of_expertise">
+  <div class="heading_area_of_expertise">
+    <button>
+      <h5>
+        Core Team
+      </h5>
     </button>
-    </div>
+  </div>
 </div>
 <div class="team">
   <div class="card" style="">
@@ -176,9 +227,9 @@ blockquote::after {
     <div class="card-body">
       <h5 class="card-title">B D Tripathi</h5>
       <p class="card-text"><b>Advocate Bombay High Court
-        and Supreme Court of India.</b></p>
+          and Supreme Court of India.</b></p>
     </div>
-   
+
     <div class="card-body">
       <a href="{% url 'profile_view' 'profile3' %}" class="btn btn-primary">Visit Profile</a>
     </div>
@@ -190,7 +241,7 @@ blockquote::after {
       <h5 class="card-title">Pritesh H. Sahu</h5>
       <p class="card-text"><b>Advocate Bombay High Court</b></p>
     </div>
-    
+
     <div class="card-body">
       <a href="{% url 'profile_view' 'profile4' %}" class="btn btn-primary">Visit Profile</a>
     </div>
@@ -200,9 +251,9 @@ blockquote::after {
     <div class="card-body">
       <h5 class="card-title">Adv. Himanshu S. Mishra</h5>
       <p class="card-text"><b>Advocate Bombay High Court
-        and Allahabad High Court</b></p>
+          and Allahabad High Court</b></p>
     </div>
-    
+
     <div class="card-body">
       <a href="{% url 'profile_view' 'profile5' %}" class="btn btn-primary">Visit Profile</a>
     </div>
