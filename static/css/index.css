@@ -54,8 +54,9 @@
 
 .request_a_call_back {
   position: relative;
-  width: 25%;
+  width: 30%;
   border-radius: 20px;
+  padding: .2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +286,11 @@
   align-items: center;
 
 }
-
+@media (min-width: 742px) and (max-height:882px) {
+  .request_a_call_back {
+   width: 40%; 
+  }
+}
 
 /* Hide the toggle button on larger screens */
 @media (min-width: 900px) {
