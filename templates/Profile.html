@@ -11,23 +11,28 @@
         font-weight: 900;
         height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
         background-size: 100% 100%;
+       
     }
     .image_section{
         width: 30%;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+       
         align-items: center;
     }
     .about_profile{
-        width: 80%;
+        width: 100%;
     }
     .image_section img {
-        width: 100%;
+        width: 70%;
+        padding: 1%;
+        border-top-right-radius: 25px;
+        background-color: goldenrod;
     }
     .section_left{
         display: flex;
-        height: 100vh;
+        height: 100%;
+        margin-bottom: 5%;
         flex-direction: row;
     }
 </style>
@@ -41,11 +46,11 @@
     </div>
 </div>
 
-<div class="container mt-3">
+<div class="container mt-3 mb-5">
 
     <h7><b>Our Team / {{profile.name}}</b></h7>
 
-<div class="section_left mt-5">
+<div class="section_left mt-5 mb-5">
 
 <div class="image_section">
     <img src="{{profile.image}}" alt="{{profile.name}}">

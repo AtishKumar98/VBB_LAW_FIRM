@@ -140,7 +140,7 @@ blockquote::after {
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -25%;
+    top: -20%;
     width: 60%;
     justify-content: space-between;
     margin:1% ;
@@ -150,7 +150,7 @@ blockquote::after {
     background-color:white;
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
     margin:1% ;
 }
@@ -163,12 +163,18 @@ blockquote::after {
     padding: 5%;
     margin: 1%;
     min-height: 8vh;
-    width: 20%;
+    width: 50%;
 }
 .practice_block img {
     width: 80%;
 }
+.main_block_for_practice{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-direction: column;
 
+}
 @media (max-width: 768px){
     .data_quote blockquote{
         width: 100%;
@@ -349,23 +355,50 @@ blockquote::after {
     </div>
 </div>
 <div class="container mt-5">
-    <p style="font-size: x-large;font-family: 'Times New Roman', Times, serif;">VBB Legal offers comprehensive legal services across various practice areas, including but not limited to:</p>
+    <p style="font-size: 110%;font-family: 'Times New Roman', Times, serif;">VBB Legal offers comprehensive legal services across various practice areas, including but not limited to:</p>
 </div>
 <div class="container">
-    <div class="practice_area">
+<div class="image_practice_area" style="width: 100%;display: flex;justify-content: center;align-items: center;">
+
+    <img src="{% static 'images/vbb-icons.png' %}"alt=""style="width: 100%;">
+</div>
+    <!-- <div class="practice_area">
         <div class="first_section">
+            <div class="main_block_for_practice" style="width: 100%;">
             <div class="practice_block"> <img src="{% static 'images/family@2x.png' %}"alt=""></div>
-            <div class="practice_block"><img src="{% static 'images/corporate-laws@2x.png' %}" alt=""></div>
-            <div class="practice_block"><img src="{% static 'images/contract@2x.png' %}" alt=""></div>
-            <div class="practice_block"><img src="{% static 'images/job-search@2x.png' %}" alt=""></div>
+            <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+        </div>
+            <div class="main_block_for_practice" style="width: 100%;">
+            <div class="practice_block"> <img src="{% static 'images/corporate-laws@2x.png' %}"alt=""></div>
+            <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+        </div>
+            <div class="main_block_for_practice" style="width: 100%;">
+            <div class="practice_block"> <img src="{% static 'images/contract@2x.png' %}"alt=""></div>
+            <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+        </div>
+            <div class="main_block_for_practice" style="width: 100%;">
+            <div class="practice_block"> <img src="{% static 'images/job-search@2x.png' %}"alt=""></div>
+            <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+        </div>
+            
         </div>
 
         <div class="second_section">
-            <div class="practice_block"> <img src="{% static 'images/copyright@2x.png' %}" alt=""></div>
-            <div class="practice_block"><img src="{% static 'images/law@2x.png' %}" alt=""></div>
+           
+            <div class="main_block_for_practice" style="width: 100%;">
+                <div class="practice_block"> <img src="{% static 'images/copyright@2x.png' %}"alt=""></div>
+                <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+            </div>
+            <div class="main_block_for_practice" style="width: 100%;">
+                <div class="practice_block"> <img src="{% static 'images/law@2x.png' %}"alt=""></div>
+                <div class="title_of_practice_block"><h6>Family Laws</h6></div>
+            </div>
+           
+           
+            
            
         </div>
-    </div>
+    </div> -->
 </div>
 <div class="container">
     <div class="VBB_diff mb-5 mt-5">
