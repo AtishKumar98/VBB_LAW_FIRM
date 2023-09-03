@@ -17,16 +17,16 @@ def index(request):
         print(name,useremail,'#######')
         email = MIMEMultipart()
         email.set_unixfrom('author')
-        email['From']="noreply@atishkumar.co.in"
-        email['To']="atishkumar98@atishkumar.co.in"
-        email['Subject'] = 'Details from User VBB Law Firm'
+        email['From']="noreply@VBBLAWFIRM.co"
+        email['To']="atishkumar31518@gmail.com"
+        email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
         #   mails_to = ' , '.join(mail_from) if True else you
         # subject_txt = 'Registration Confirmation for %s' %(conference_title)
         # subject_txt = 'You are registered as Kalaakaar'
         # BillingName = str(conf_detail_obj.cr_title) + ' ' +  str(conf_detail_obj.cr_fullname) 
         # msg_body = '\n%s,\n\n A payment of Rs.%s received towards the registration fees for the "%s". Thank you for the payment. Your Registration is confirmed and the registration number is %s.\n\n Note: This is an auto-generated mail, please dot not respond to this email.'%(BillingName,request.POST['amt'],conference_title,request.POST['mer_txn'])
-        msg_body = f'<h3>User : {name} , {phone} , {areaOfInterest}, {message} <h3><br><img src = "https://kalaakaar.co/static/images/Business-logo.png" style="width:10%;height:10%;">'
+        msg_body = f'<h3>Hello Team, User has requested a callback.</h3><br/><br/><b>Kindly note Information given below</b> <br/><br/>Name of the client : {name} , <br/> Phone Number: {phone} , <br/> Interest: {areaOfInterest}, <br/> Messsage: {message} <h3><br> ////Signature////'
         # msg = 'Subject:{}\n\n{}'.format(email['Subject'], msg_body)
         email.attach(MIMEText(msg_body,"html"))
         server = smtplib.SMTP_SSL('smtpout.secureserver.net',465)
