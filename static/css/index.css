@@ -58,7 +58,9 @@ body{
   width: 147%;
   color: gold;
 }
-
+.navbar-nav{
+  margin-top: 1%;
+}
 .request_a_call_back {
   position: relative;
   width:auto;
@@ -67,6 +69,7 @@ body{
   padding-left: 2%;
   padding-right: 2%;
   display: flex;
+  margin-top: none !important;
   justify-content: center;
   align-items: center;
   background-color: rgba(255,219,109,1);
@@ -84,6 +87,7 @@ body{
 .navbar-brand,
 .navbar-nav .nav-link {
   color: #fff;
+  
 }
 
 .navbar-nav {
