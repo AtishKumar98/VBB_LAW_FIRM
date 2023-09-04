@@ -7,7 +7,7 @@
         justify-content: center;
         align-items:center ;
         color: rgba(255,191,0,1) ;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 900;
         height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
         background-size: 100% 100%;
@@ -21,8 +21,8 @@
     }
     .data_quote blockquote{
         width: 100%;
-        font-size: x-large;
-        font-family: 'Times New Roman', Times, serif;
+        font-size:100%;
+        font-family: 'Poppins', sans-serif;
     }
     blockquote {
   /* padding: 2%; Add some space for the quote icon */
@@ -32,6 +32,7 @@
 blockquote::before {
   content: "\201C"; /* Unicode code point for opening double quotation mark */
   font-size: 270%; /* Adjust size of the quote icon */
+  font-family: 'Times New Roman', Times, serif;
   color: rgba(255,219,109,1) ; /* Change color of the quote icon */
 }
 
@@ -39,6 +40,7 @@ blockquote::after {
   content: "\201D"; /* Unicode code point for closing double quotation mark */
   font-size: 270%; /* Adjust size of the quote icon */
   color: rgba(255,219,109,1) ;  /* Change color of the quote icon */
+  font-family: 'Times New Roman', Times, serif;
 }
 .commitment_section{
     display : flex ;
@@ -179,7 +181,7 @@ flex-direction: column;
     .data_quote blockquote{
         width: 100%;
         font-size: small;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Poppins', sans-serif;
     }
     .commitment h1 {
     margin-left: 5%;
