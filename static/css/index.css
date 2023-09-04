@@ -104,6 +104,13 @@ body{
   font-family: 'Poppins', sans-serif;
   font-size: 40%;
 }
+ .heading_services h1 {
+    width: 78%;
+    margin-top: 2%;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: black; margin-top: 4%;  border-bottom: 2px solid goldenrod;
+  }
 
 .quote_section {
   display: flex;
@@ -373,9 +380,17 @@ body{
   }
 
   .heading_services {
-    width: 42%;
-    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    padding-top: 3%;
+    font-family: 'Poppins', sans-serif;
   }
+  
+  .heading_services h1 {
+    width: 80%;
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .heading_quote h1{
     font-size: large;
   }
@@ -391,7 +406,7 @@ body{
 .services_circle {
   background-image: linear-gradient(-180deg, rgb(231, 215, 122), goldenrod);
   border: 2px solid yellow;
-  height: 16vh;
+  height: 7vh;
   border-radius: 4%;
   margin: 1%;
   padding: 0%;
