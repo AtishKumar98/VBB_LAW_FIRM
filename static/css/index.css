@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
 .nav-item .active {
   color: goldenrod;
 }
@@ -21,7 +28,7 @@
 }
 
 .circles_services p {
-  font-size: 85%;
+  font-size: 70%;
   font-weight: 600;
 }
 
@@ -57,8 +64,8 @@
   width:auto;
   border-radius: 20px;
   padding: .5%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,8 +76,9 @@
 /* Custom styles */
 .navbar {
   background-color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: x-large;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
 }
 
 .navbar-brand,
@@ -87,8 +95,9 @@
 }
 
 .heading_services {
-  width: 17%;
-  font-family: 'Times New Roman', Times, serif;
+  width: 20%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40%;
 }
 
 .quote_section {
@@ -107,11 +116,22 @@
 
 
 .image_for_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* filter: blur(8px); */
   width: 100%;
+  background-size: contain;
+  /* background-image: url('../images/scales-justice-gavel-wooden-ta.png'); */
+
 }
 
 .image_for_banner img {
-  width: 100%;
+  object-fit: fill;
+  width: 1900px;
+  height: 700px;
+  filter: none;
+  -webkit-filter: none;
 }
 
 .footer {
@@ -393,6 +413,25 @@ body{
   margin-top: 5%;
 }
 
+
+.image_for_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* filter: blur(8px); */
+  width: 100%;
+  background-size: contain;
+  /* background-image: url('../images/scales-justice-gavel-wooden-ta.png'); */
+
+}
+
+.image_for_banner img {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+  filter: none;
+  -webkit-filter: none;
+}
 .textual_placements p{
   width: 80%;
   font-size: smaller;
