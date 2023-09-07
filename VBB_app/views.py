@@ -155,8 +155,8 @@ profiles = {
     },
 
      'profile5': {
-        'name': 'Adv. Himanshu S. Mishra',
-        'role': 'Lawyer Core-Team',
+        'name': 'Adv. Dhwani S. Rughani',
+        'role': 'A Rising Advocate',
         'image':'/../static/images/BD_Tripathi-removebg-preview_by@2x.png',
         'description':"""
     <h4>Dhwani S. Rughani, a dynamic advocate at VBB Legal, shines as a promising newcomer in the legal arena.</h4>
