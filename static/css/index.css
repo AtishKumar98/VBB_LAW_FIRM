@@ -191,7 +191,7 @@ body{
 
 .textual_placements {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 17%;
   height: 100%;
   display: flex;
   text-align: left;
@@ -257,6 +257,7 @@ body{
   display: flex;
   position: relative;
   flex-direction: row;
+  margin-top: 5%;
 }
 
 .social_handle {
@@ -421,7 +422,6 @@ body{
   min-height: 70vh;
   flex-direction: column;
   overflow: hidden;
-  margin-bottom: 1%;
 }
 .textual_placements {
   overflow: hidden;
@@ -429,7 +429,7 @@ body{
   height: 100%;
 }
 .textual_placements h1{
-  font-size: large;
+  font-size: x-large;
   margin-top: 5%;
 }
 
