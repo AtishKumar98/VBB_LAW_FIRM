@@ -503,4 +503,23 @@ body{
   flex-direction: column;
   justify-content: center;
 }
+
+/* Your CSS styles for screens below the standard resolution go here */
+
 }
+@media screen and (max-width: 1910px) {
+  
+  .textual_placements p {
+    font-size: small;
+    margin-top: 4%;
+    width: 94%;
+  }
+  .textual_placements h1{
+    font-size: medium;
+    font-weight: 600;
+    width: 60%;
+  }
+  .card{
+    width: 60%;
+  }
+  }
