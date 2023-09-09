@@ -405,9 +405,12 @@ body{
   flex-direction: column;
   padding: 6%;
 }
+.btn{
+  font-size: .8rem;
+}
 .services_circle {
-  background-image: linear-gradient(-180deg, rgb(231, 215, 122), goldenrod);
-  border: 2px solid yellow;
+  background-image: linear-gradient(-180deg, rgba(255,219,109,1), rgb(255, 255, 253)) !important;
+  border: 2px solid rgba(255,219,109,1);
   height: 7vh;
   border-radius: 4%;
   margin: 1%;
@@ -505,6 +508,14 @@ body{
 
 /* Your CSS styles for screens below the standard resolution go here */
 
+}
+
+@media (min-width: 768px){
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-direction: column;
+}
 }
 @media screen and (max-width: 1910px) {
   
