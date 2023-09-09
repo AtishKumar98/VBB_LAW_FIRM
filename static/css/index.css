@@ -140,8 +140,8 @@ body{
 
 .image_for_banner img {
   object-fit: fill;
-  width: 1900px;
-  height: 700px;
+  width: 100%;
+  height: auto;
   filter: none;
   -webkit-filter: none;
 }
@@ -206,16 +206,18 @@ body{
   background-color: azure;
   justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  width: 70%;
 
 }
 
 .textual_placements p {
-  font-size: medium;
-  width: 90%;
+  font-size: x-large;
+  margin-top: 4%;
+  width: 94%;
 }
 .textual_placements h1{
   font-size: xx-large;
+  font-weight: 600;
   width: 60%;
 }
 .image_secton img {
