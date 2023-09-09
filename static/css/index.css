@@ -388,7 +388,7 @@ body{
   }
   
   .heading_services h1 {
-    width: 80%;
+    width:60%;
     font-size: x-large;
     font-family: 'Poppins', sans-serif;
   }
@@ -433,7 +433,7 @@ body{
   height: 100%;
 }
 .textual_placements h1{
-  font-size: x-large;
+  font-size: x-large !important;
   margin-top: 5%;
 }
 
@@ -457,7 +457,7 @@ body{
   -webkit-filter: none;
 }
 .textual_placements p{
-  width: 80%;
+  width: 80% !important;
   font-size: smaller;
   margin-top: 1%;
 }
@@ -477,13 +477,14 @@ body{
   display: flex;
   position: relative;
   flex-direction: column;
+  align-items: center;
 }
 .social_handle {
   background-color: goldenrod;
   height: 100%;
   border: 5px solid rgb(82, 61, 8);
   border-radius: 5%;
-  width: 100%;
+  width: 80%;
   margin: 1%;
 }
 .social_handle_heading {
