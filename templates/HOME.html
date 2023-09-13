@@ -3,26 +3,8 @@
 {% block content %}
 
 <style>
-.block_for_social_platforms{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
 
-}
-.image_circle{
-    width: 100%;
-    margin: 2%;
-  }
-  .image_circle img{
-    width: 100%;
-  }
-  .circles_services{
-    justify-content:space-evenly;
-    padding: 0%;
-    padding-top:3%;
-    padding-bottom: 3%;
-  }
+
 </style>
 <div class="image_for_banner">
   <img src ="{% static 'images/scales-2.png' %}">
@@ -33,7 +15,7 @@
       <div class="service_heading_main">
         
         <div class="heading_services" style="">
-          <h1 style = "text-transform: uppercase;">OUR SERVICES</h1>
+          <h1 class = 'our_service_heading'style = "">OUR SERVICES</h1>
           <img src ='../static/images/section_line.png' style="width: 60%;">
         </div>
         <div class="heading_button">
@@ -111,15 +93,15 @@
 <div class="social_section">
   <div class="container">
    <div class="social_handle_heading">
-     <h1 style ="font-size: xx-large;color: goldenrod;">OUR VIRTUAL PRESENCE</h1>
+     <h1 class ='OUR_VIRTUAL_HEADING' style ="">OUR VIRTUAL PRESENCE</h1>
      <img src ='../static/images/section_line.png' style="width: 60%;">
     </div>
    <div class="block_for_social_platforms">
 
-     <img src="{% static 'images/Instagram.png' %}" alt="Background Image" style='width:24%;margin-top: 3%;'>
-     <img src="{% static 'images/Facebook.png' %}" alt="Background Image" style='width:24%;margin-top: 3%;'>
-     <img src="{% static 'images/Twitter.png' %}" alt="Background Image" style='width:24%;margin-top: 3%;'>
-     <img src="{% static 'images/LinkedIn.png' %}" alt="Background Image" style='width:24%;margin-top: 3%;'>
+     <img src="{% static 'images/Instagram.png' %}"   class= 'block_under_sp' alt="Background Image" style=''>
+     <img src="{% static 'images/Facebook.png' %}"    class= 'block_under_sp' alt="Background Image" style=''>
+     <img src="{% static 'images/Twitter.png' %}"     class= 'block_under_sp' alt="Background Image" style=''>
+     <img src="{% static 'images/LinkedIn.png' %}"    class= 'block_under_sp' alt="Background Image" style=''>
     
     </div>
     

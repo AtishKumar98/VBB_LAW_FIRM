@@ -74,6 +74,9 @@ body{
 .navbar-nav{
   margin-top: 1%;
 }
+.our_service_heading{
+  text-transform: uppercase;
+}
 .request_a_call_back {
   position: relative;
   width:auto;
@@ -315,7 +318,26 @@ body{
   opacity: 0.6;
   /* Adjust the opacity as needed */
 }
+.image_circle{
+  width: 100%;
+  margin: 2%;
+}
+.image_circle img{
+  width: 100%;
+}
+.circles_services{
+  justify-content:space-evenly;
+  padding: 0%;
+  padding-top:3%;
+  padding-bottom: 3%;
+}
+.block_for_social_platforms{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 
+}
 .logo {
   position: absolute;
   top: 50%;
@@ -335,6 +357,14 @@ body{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   border-radius: 2%;
   padding: 2%;
+}
+.OUR_VIRTUAL_HEADING{
+  font-size: xx-large;color: goldenrod;
+
+}
+.block_under_sp{
+width:24%;
+margin-top: 3%;
 }
 .card form{
   margin-top: 5%;
@@ -405,6 +435,14 @@ body{
     height: 50vh;
     color: white;
   }
+  .heading_services h1 {
+    width: 67%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    color: black; margin-top: 4%; 
+  }
 
   .heading_services {
     width: 50%;
@@ -412,11 +450,6 @@ body{
     font-family: 'Poppins', sans-serif;
   }
   
-  .heading_services h1 {
-    width:60%;
-    font-size: x-large;
-    font-family: 'Poppins', sans-serif;
-  }
 
   .heading_quote h1{
     font-size: large;
@@ -426,8 +459,9 @@ body{
     font-size: small;
 }
 .circle_area{
-  overflow: scroll;
+  overflow-x: scroll;
 }
+
 .circles_services {
   display: flex;
   flex-direction: row;
@@ -468,11 +502,16 @@ body{
 .textual_placements {
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  margin-left: 0%;
 }
 .textual_placements h1{
-  font-size: x-large !important;
+  font-size: large !important;
   margin-top: 5%;
+  width: 82%;
 }
 
 
@@ -497,6 +536,7 @@ body{
 .textual_placements p{
   width: 80% !important;
   font-size: smaller;
+  text-align: center;
   margin-top: 1%;
 }
 .image_secton {
@@ -525,8 +565,12 @@ body{
   width: 80%;
   margin: 1%;
 }
+.OUR_VIRTUAL_HEADING{
+  margin-bottom: 0%;
+}
 .social_handle_heading {
   width: 65%;
+  margin-top: 4%;
 }
 .social_section {
   background-color: black;
@@ -544,6 +588,20 @@ body{
   flex-direction: column;
   justify-content: center;
 }
+.block_for_social_platforms{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+  .OUR_VIRTUAL_HEADING{
+    font-size:large;color: goldenrod;
+  }
+  .block_under_sp{
+  width:100%;
+  margin-top: 3%;
+  }
 
 /* Your CSS styles for screens below the standard resolution go here */
 
