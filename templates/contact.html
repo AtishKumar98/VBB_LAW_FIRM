@@ -13,17 +13,21 @@
         height: 10vh; background-image: url("{% static 'images/about_us_bg.png' %}");  
         background-size: 100% 100%;
     }
+    .form_section{
+      background-image: none;
+    }
+   
     .card{
         margin: 3%;
         width: 70%;
-        min-height: 60vh;
+        min-height: 70vh;
     }
     .btn {
       width: 40%;
     }
     .for_background{
         background-image: url("{% static 'images/Maps_BG@2x.png' %}");  
-        background-size: 100% 100%;
+        background-size: cover;
     }
     .li > h5 > p{
         font-size: smaller;
@@ -47,12 +51,13 @@
     }
 </style>
 <div class="for_background">
+  <hr style="opacity: 1; background-color: rgb(185, 139, 30); height: 12px;border:1px;width: 100%;margin-bottom: 0%;margin-top: 0%;border-top: 1px solid rgb(201, 150, 9);">
 <div class="full_page" style=" ">
 
     <div class="container">
         
         <div class = 'about_usheading'>
-            <h1>Contact Us</h1>
+          <h1 style="text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;">Contact Us</h1>
         </div>    
     </div>
 </div>
@@ -63,11 +68,11 @@
         <div class="card">
           <div class="container">
             <center>
-              <h4>GET IN TOUCH</h4>
+              <h3 style="font-weight: 600;  font-family: 'Poppins', 'sans-serif';">GET IN TOUCH</h3>
             </center>
             <form method="POST" action="/">
               {% csrf_token %}
-              <div class="mb-3">
+              <div class="mb-3 mt-5">
                 <label for="name" class="form-label">Name:</label>
                 <input type="text" id="name" name="name" class="form-control" required>
               </div>
@@ -82,29 +87,31 @@
                 <input type="email" id="email" name="email" class="form-control" required>
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Message:</label>
+                <label for="message" class="form-label mt-3">Message:</label>
                 <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
               </div>
         <center>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary mt-4"style='background-color:#FFDB6D;color:black;text-transform: uppercase;font-weight: 600;'>Submit</button>
         </center>
             </form>
           </div>
         </div>
 
         <div class="card" style="border: none; box-shadow: none; background: transparent;">
-            <h4 style='font-family: "Poppins", "sans-serif";'>
+            <h4 style='font-family: "Poppins", "sans-serif";font-weight: 600;'>
                 Address:
             </h4>
             <ul style="list-style: disc; ">
-            <li style="color: goldenrod;"><h5 style = 'color: black !important;  font-family: "Poppins", "sans-serif";'>Mumbai:<br>
-               <p style = "color: black !important; font-size: medium;"> 424, MOHID HEIGHTS, RTO Rd, Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053. </p>
+            <li style="color: goldenrod;list-style-type: disc;
+            font-size:25px;"><h5 style = 'color: black !important;  font-family: "Poppins", "sans-serif";font-weight: 500;'>Mumbai:<br>
+               <p style = "color: black !important; font-size: medium; font-weight: 400;"> 424, MOHID HEIGHTS, RTO Rd, Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053. </p>
          </h5></li>
-            <li style="color: goldenrod;"><h5 style = 'color: black;  font-family: "Poppins", "sans-serif" !important;'>Navi Mumbai: <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium;"> Flat No. 303, Pearl Apartment, At Rees, Rasayani, 410222.</p></h5></li>
+            <li style="color: goldenrod;font-size:25px;"><h5 style = 'color: black;  font-family: "Poppins", "sans-serif" !important;font-weight: 500;'>Navi Mumbai: 
+              <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium; font-weight: 400;"> Flat No. 303, Pearl Apartment, At Rees, Rasayani, 410222.</p></h5></li>
         </ul>
         <div id="map" style="height: 400px;"></div>
         
-            <a href ='https://goo.gl/maps/zZKfoPc3t54uZov37' class="btn btn-primary mt-4" style="color: white;"> <b>Get Directions </b></a>
+            <a href ='https://goo.gl/maps/zZKfoPc3t54uZov37' class="btn btn-primary mt-4" style='font-weight: 600;  background-color:#FFDB6D;color:black;text-transform: uppercase;'> Get Directions </a>
           </div>
         </div>
 

@@ -56,33 +56,36 @@ def ourteam(request):
 profiles = {
     'profile1': {
         'name': 'Vinayak Mishra',
-        'role': 'Founder',
-        'image':'/../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png',
+        'role': 'Advocate Bombay High Court and Supreme Court of India.',
+        'image':'/../static/images/Vinayak_Mishra.png',
         'description': """
-    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
+   
 
-    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+    <p>Adv. Vinayak D. Mishra, an esteemed legal luminary, stands as a founding partner at VBB Legal, where his profound expertise in criminal law shines brightly. Renowned for his specialization in criminal matters, Adv. Vinayak D. Mishra is a distinguished practitioner whose legal prowess extends to various jurisdictions, encompassing a diverse array of criminal legal proceedings.</p>
 
-    <h5>A Noble Profession:</h2>
+    
+    <p>Within the expansive landscape of legal practice, Adv. Vinayak D. Mishra has earned distinction in Criminal and Civil litigation across Magistrate and Session Courts, High Court advocacy, Consumer Court disputes, Real Estate Regulatory Authority (RERA) matters, and Debt Recovery Tribunal (DRT) cases. His exceptional legal acumen shines most notably in his mastery of criminal law, where his expertise includes handling bail, anticipatory bail matters, post-criminal writ petition proceedings, special leave petitions, and execution proceedings.</p>
 
-    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
 
-    <h5>Education and Training:</h2>
 
-    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
+    <p>Clients entrust their most intricate criminal cases to Adv. Vinayak D. Mishra, seeking his adept counsel and representation in Session Courts, High Courts, and even the exalted precincts of the Supreme Court. His remarkable success record in securing bail and anticipatory bail, coupled with his proficiency in post-criminal writ petition matters, special leave petitions, and execution proceedings, underscores his prowess in strategic advocacy and his unwavering commitment to justice.</p>
 
     <!-- Add more content as needed -->
 
-    <h5>Conclusion:</h2>
+    
 
-    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+    <p>As a founding partner at VBB Legal, Adv. Vinayak D. Mishra epitomizes an unparalleled commitment to client welfare, transcending conventional legal boundaries. His personalized guidance and steadfast support provide clients with a sense of empowerment as they navigate the intricacies of the legal system, including specialized proceedings such as special leave petitions and execution matters. His exceptional communication skills and profound dedication to justice have solidified his standing as an esteemed and sought-after legal practitioner.
+</p>
+<p>
+An influential figure in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv. Vinayak D. Mishra's stature within the legal fraternity reflects his unwavering pursuit of excellence. His exceptional mastery of criminal law, spanning bail, anticipatory bail, post-criminal writ petition proceedings, special leave petitions, and execution matters, distinguishes him as a legal professional of exceptional repute.
+</p>
 """
 ,
     },
     'profile2': {
         'name': 'Adv. Binita Y. Sharma',
         'role': 'Co-Founder',
-        'image':'/../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png',
+        'image':'/../static/images/Adv._Binita_Y. Sharma.png',
         'description':"""
     <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 

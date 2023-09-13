@@ -13,28 +13,37 @@
         background-size: 100% 100%;
        
     }
+    .profile_name{
+        font-size: x-large;
+    }
+    .profile_role{
+        font-size: small;
+        align-items: center;
+        width: 70%;
+        text-align: center;
+        justify-content: center;
+    }
     .image_section{
         width: 30%;
         margin-top: 3%;
         display: flex;
         flex-direction: column;
-       
         align-items: center;
     }
     .about_profile{
         width: 100%;
     }
     .image_section img {
-        width: 70%;
+        width: 87%;
         padding: 1%;
         border-top-right-radius: 25px;
-        background-color: goldenrod;
     }
     .section_left{
         display: flex;
         height: 100%;
         margin-bottom: 5%;
         flex-direction: row;
+        margin-left: -3%;
     }
 
     @media (max-width: 768px){
@@ -46,12 +55,13 @@
         }
     }
 </style>
+<hr style="opacity: 1; background-color: rgb(185, 139, 30); height: 12px;border:1px;width: 100%;margin-bottom: 0%;margin-top: 0%;border-top: 1px solid rgb(201, 150, 9);">
 <div class="full_page" style=" ">
 
     <div class="container">
         
         <div class = 'about_usheading'>
-            <h1>Our Team</h1>
+            <h1 style="text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;">Our Team</h1>
         </div>    
     </div>
 </div>
@@ -65,14 +75,14 @@
 <div class="image_section">
     <img src="{{profile.image}}" alt="{{profile.name}}">
     <div class="profile_name"><b>{{profile.name}}</b></div>
-    <div class="profile_role"><b>{{ profile.role }}</b></div>
+    <div class="profile_role">{{ profile.role }}</div>
 </div>
 
    
     
     <div class="about_profile mt-5">
-        <div class="about_heading"><h1>About Me</h1></div>
-        <ul class="list-group list-group-flush">
+        <div class="about_heading"><h3>About Me</h3></div>
+        <ul class="list-group list-group-flush" style="margin-left: -1.5%;">
             <li class="list-group-item">{{ profile.description|safe }}</li>
             
         </ul>

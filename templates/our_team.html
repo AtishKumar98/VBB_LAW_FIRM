@@ -85,44 +85,45 @@
     width: 20%;
     border: none;
     box-shadow: none;
+    
   }
 
   .card img {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: none;
     border-top-right-radius: 25px;
-    background-color: goldenrod;
     width: 80%;
   }
 
   .card-title {
     text-align: left;
   }
-
-  .area_of_expertise {
+  .area_of_expertise:hover{
+        cursor: unset !important;
+    }
+  .area_of_expertise{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 100%;
-  }
-
-  .area_of_expertise button {
-    width: 250px;
-    height: 70px;
-    transform: skewX(-20deg);
-    /* Skew the button */
+}
+.area_of_expertise button {
+    width: 274px;
+  height: 57px;
+  text-transform: uppercase;
+  transform: skewX(-20deg); /* Skew the button */
     background-color: black;
-    color: rgba(255, 191, 0, 1);
+    color: rgba(255,191,0,1);
 
-  }
+}
 
-  .area_of_expertise button h5 {
-    transform: skewX(20deg);
-    /* Skew the button */
+.area_of_expertise button h5 {
+  transform: skewX(20deg); /* Skew the button */
+   
 
-
-  }
+}
 
 
   @media (max-width: 768px) {
@@ -156,22 +157,26 @@
 
   }
 </style>
+<hr style="opacity: 1; background-color: rgb(185, 139, 30); height: 12px;border:1px;width: 100%;margin-bottom: 0%;margin-top: 0%;border-top: 1px solid rgb(201, 150, 9);">
 <div class="full_page" style=" ">
 
   <div class="container">
 
     <div class='about_usheading'>
-      <h1>Our Team</h1>
+      <h1 style="text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;">Our Team</h1>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="data_quote">
-    <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal
+    <img src = '../static/images/ourteam-text.png' style ='width: 75%;'/>
+    <!-- <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal
       professionals who are dedicated to providing comprehensive and innovative legal solutions. Our diverse and
       experienced team is committed to delivering excellence in every aspect of the law. Here, you'll find a group of
       talented individuals who bring a wealth of knowledge, passion, and dedication to our clients' legal needs.
-    </blockquote>
+    </blockquote> -->
+
+
   </div>
 </div>
 
@@ -180,7 +185,7 @@
 
     <div class="team">
       <div class="card" style="">
-        <img src="../static/images/Vinayak_Mishra-removebg-previe_bf@2x.png" class="card-img-top" style="width: 78%;"
+        <img src="../static/images/Vinayak_Mishra.png" class="card-img-top" style="width: 78%;"
           alt="...">
         <div class="card-body">
           <h5 class="card-title">Vinayak Mishra</h5>
@@ -192,12 +197,12 @@
 
         </ul>
         <div class="card-body">
-          <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary">Visit Profile</a>
+          <a href="{% url 'profile_view' 'profile1' %}" class="btn btn-primary"><b>Visit Profile</b></a>
         </div>
       </div>
 
       <div class="card" style="">
-        <img src="../static/images/Adv_binita_Y_Sharma-removebg-p@2x.png" class="card-img-top" alt="...">
+        <img src="../static/images/Adv._Binita_Y. Sharma.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Adv. Binita Y. Sharma</h5>
           <p class="card-text"><b>Co-Founder</b></p>
@@ -207,7 +212,7 @@
 
         </ul>
         <div class="card-body">
-          <a href="{% url 'profile_view' 'profile2' %}" class="btn btn-primary">Visit Profile</a>
+          <a href="{% url 'profile_view' 'profile2' %}" class="btn btn-primary"><b>Visit Profile</b></a>
         </div>
       </div>
     </div>
@@ -225,38 +230,38 @@
 </div>
 <div class="team">
   <div class="card" style="">
-    <img src="../static/images/BD_Tripathi-removebg-preview_by@2x.png" class="card-img-top" alt="...">
+    <img src="../static/images/B_D_Tripathi.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">B D Tripathi</h5>
-      <p class="card-text"><b>Advocate Bombay High Court
-          and Supreme Court of India.</b></p>
+      <p class="card-text">Advocate Bombay High Court
+          and Supreme Court of India.</p>
     </div>
 
     <div class="card-body">
-      <a href="{% url 'profile_view' 'profile3' %}" class="btn btn-primary">Visit Profile</a>
+      <a href="{% url 'profile_view' 'profile3' %}" class="btn btn-primary"><b>Visit Profile</b></a>
     </div>
   </div>
 
   <div class="card" style="">
-    <img src="../static/images/Pritesh_H_Sahu__legal_Executiv@2x.png" class="card-img-top" alt="...">
+    <img src="../static/images/Pritesh_H_Sahu.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Pritesh H. Sahu</h5>
-      <p class="card-text"><b>Advocate Bombay High Court</b></p>
+      <p class="card-text">Advocate Bombay High Court</p>
     </div>
 
     <div class="card-body">
-      <a href="{% url 'profile_view' 'profile4' %}" class="btn btn-primary">Visit Profile</a>
+      <a href="{% url 'profile_view' 'profile4' %}" class="btn btn-primary"><b>Visit Profile</b></a>
     </div>
   </div>
   <div class="card" style="">
-    <img src="../static/images/BD_Tripathi-removebg-preview_by@2x.png" class="card-img-top" alt="...">
+    <img src="../static/images/B_D_Tripathi.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Adv.Dhwani S. Rughani</h5>
-      <p class="card-text"><b> A Rising Advocate</b></p>
+      <p class="card-text"> A Rising Advocate</p>
     </div>
 
     <div class="card-body">
-      <a href="{% url 'profile_view' 'profile5' %}" class="btn btn-primary">Visit Profile</a>
+      <a href="{% url 'profile_view' 'profile5' %}" class="btn btn-primary"><b>Visit Profile</b></a>
     </div>
   </div>
 </div>

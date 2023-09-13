@@ -109,6 +109,7 @@ body{
 
 .navbar-brand img {
   width: 65%;
+  margin-left: -9%;
 }
 
 .heading_services {
@@ -164,9 +165,12 @@ body{
   color: goldenrod;
   padding: 20px;
 }
-
+.footer li{
+  color: white;
+}
 .footer h3 {
   color: goldenrod;
+  font-size: 1.3rem;
 }
 
 .social-media li {
@@ -421,10 +425,17 @@ body{
     width: 100%;
     font-size: small;
 }
+.circle_area{
+  overflow: scroll;
+}
 .circles_services {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 6%;
+  width: 150%;
+}
+.image_circle{
+  width: 100%;
 }
 .btn-outline-dark{
   width: 50%;

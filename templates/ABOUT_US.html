@@ -2,6 +2,12 @@
 {% load static %}
 {% block content %}
 <style>
+    .img_VBB_DEPARTMENT{
+        width: 80%;
+    }
+    .area_of_ex:hover{
+        cursor: unset !important;
+    }
     .full_page{
         display: flex;
         justify-content: center;
@@ -16,11 +22,12 @@
         display: flex;
         justify-content: center;
         margin-top: 4%;
+        width: 100%;
         align-items: center;
         
     }
     .data_quote blockquote{
-        width: 100%;
+        width: 50%;
         font-size:100%;
         font-family: 'Poppins', sans-serif;
     }
@@ -54,17 +61,26 @@ blockquote::after {
 }
 .commitment{
     width: 70%;
-    background-color: rgba(255,219,109,1) ;
-    height: 20vh;
+    background-color: #FFDB6D;
+    height: 18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: black;
 }
+
+.VBB_diff{
+    margin-top: 4%;
+}
+.VBB_diff h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: -1%;
+}
 .exptertise{
     width: 70%;
-    background-color: rgba(255,219,109,1) ;
-    height: 20vh;
+    background-color: #FFDB6D;
+    height: 18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,16 +89,22 @@ blockquote::after {
 
 .commitment h1 {
     margin-left: 24%;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 .exptertise h1{
     margin-left: 5%;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 .commitment p {
     margin-left: 24%;
+    margin-top: 1%;
 }
 
 .exptertise p {
     margin-left: 5%;
+    margin-top: 1%;
 }
 .commitment_icon{
     width: 30%;
@@ -100,10 +122,10 @@ blockquote::after {
 }
 
 .commitment_icon img{
-    width: 30%;
+    width: 22%;
 }
 .expertise_icon img{
-    width: 30%;
+    width: 22%;
     margin-left: 30%;
 }
 .area_of_expertise{
@@ -116,7 +138,7 @@ blockquote::after {
 }
 .area_of_expertise button {
     width: 274px;
-  height: 70px;
+  height: 57px;
   transform: skewX(-20deg); /* Skew the button */
     background-color: black;
     color: rgba(255,191,0,1);
@@ -206,7 +228,7 @@ flex-direction: column;
 
 .commitment{
     width: 70%;
-    background-color: rgba(255,219,109,1) ;
+    background-color: #FFDB6D;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -216,7 +238,7 @@ flex-direction: column;
 }
 .exptertise{
     width: 70%;
-    background-color: rgba(255,219,109,1) ;
+    background-color: #FFDB6D ;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -295,20 +317,21 @@ flex-direction: column;
 }
 }
 </style>
-<div class="full_page" style=" ">
-
+<hr style="opacity: 1; background-color: rgb(214, 170, 66); height: 12px;border:1px;width: 100%;margin-bottom: 0%;margin-top: 0%;border-top: 1px solid rgb(201, 150, 9);">
+<div class="full_page" style="">
     <div class="container">
         
         <div class = 'about_usheading'>
-            <h1>About Us</h1>
+            <h1 style="text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;">About Us</h1>
         </div>    
     </div>
 </div>
 <div class="data_quote">
-<div class="container">
-        <blockquote> Welcome to <b>VBB Legal</b> your trusted partner in navigating the complexities of the legal world. With a tradition of trust and an unwavering commitment to excellence. we have been serving individuals and businesses with unparalleled legal representation.
-        </blockquote>
-    </div>
+
+        <!-- <blockquote> Welcome to <b>VBB Legal</b> your trusted partner in navigating the complexities of the legal world. With a tradition of trust and an unwavering commitment to excellence. we have been serving individuals and businesses with unparalleled legal representation.
+        </blockquote> -->
+        <img src = '../static/images/Group_31.png' style ='width: 50%;'/>
+    
 </div>
 <div class="commitment_section">
     <div class="commitment">
@@ -359,22 +382,22 @@ flex-direction: column;
 </div>
 
 <div class="area_of_expertise">
-    <div class="heading_area_of_expertise">
-        <button>
-            <h5>
+    <div class="heading_area_of_expertise" >
+        <button class="area_of_ex">
+            <h5 style="text-transform: uppercase;color:#FFBF0"> 
 
-            Area of Expertise
+            AREA OF PRACTICE
         </h5>
     </button>
     </div>
 </div>
 <div class="container mt-5">
-    <p style="font-size: 110%; font-family: 'Poppins', sans-serif;" class="mb-5 mt-5">VBB Legal offers comprehensive legal services across various practice areas, including but not limited to:</p>
+    <p style="font-size: 122%; font-family: 'Poppins', sans-serif; text-align: center;" class="mb-5 mt-5">VBB Legal offers comprehensive legal services across various practice areas, including but not limited to:</p>
 </div>
 <div class="container">
 <div class="image_practice_area" style="width: 100%;display: flex;justify-content: center;align-items: center;">
 
-    <img src="{% static 'images/vbb-icons.png' %}"alt=""style="width: 100%;">
+    <img src="{% static 'images/vbb-icons.png' %}"alt="" class="img_VBB_DEPARTMENT">
 </div>
     <!-- <div class="practice_area">
         <div class="first_section">
@@ -427,7 +450,7 @@ flex-direction: column;
             <br><br>
             Contact us today to discover how VBB Legal can be your guide to a brighter legal future.
         </p>
-        <div class="btn btn-primary" style="color: white; font-family: 'Poppins', sans-serif, Times, serif;"> <b>CONTACT NOW </b></div>
+        <div class="btn btn-primary mt-4" style="background-color: #FFDB6D; color: black; font-family: 'Poppins', sans-serif, Times, serif;"> <b>CONTACT NOW </b></div>
     </div>
 </div>
 
