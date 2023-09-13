@@ -12,6 +12,7 @@ body{
 .btn-outline-primary {
   color: gold;
   border-color: gold;
+  border: 1px solid gold;
   width: 12%;
 }
 .btn-outline-dark{
@@ -20,9 +21,16 @@ body{
   font-weight: 500;
 }
 .btn-outline-primary:hover {
-  color: black;
-  border-color: none;
-  background-color: gold;
+  color: gold !important;
+  background-color:transparent !important;
+  border: 1px solid gold !important;
+  border-color: gold !important;
+}
+
+.btn-outline-dark:hover {
+  color: unset !important;
+  background-color:unset !important;
+  border-color: unset !important;
 }
 
 .circles_services {
@@ -417,6 +425,12 @@ body{
   display: flex;
   flex-direction: column;
   padding: 6%;
+}
+.btn-outline-dark{
+  width: 50%;
+}
+.btn-outline-primary{
+  width: 52%;
 }
 .btn{
   font-size: .8rem;
