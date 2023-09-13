@@ -1,4 +1,10 @@
 {% load static %}
+<style>
+  .social-media{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
 <footer class="footer">
     <div class="container">
       <div class="row">
@@ -13,10 +19,10 @@
         <div class="col-md-4">
           <h3>Social Media Presence</h3>
           <ul class="social-media">
-            <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" class="instagram"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" class="facebook"><img src="{% static 'images/Ig-Foot.png' %}" alt="Background Image" style='width:80%;margin-top: 3%;margin-left: -3%;'></a></li>
+            <li><a href="#" class="twitter"><img src="{% static 'images/Fb-Foot.png' %}" alt="Background Image" style='width:80%;margin-top: 3%;margin-left: -3%;'></a></li>
+            <li><a href="#" class="instagram"><img src="{% static 'images/X-Foot.png' %}" alt="Background Image" style='width:80%;margin-top: 3%;margin-left: -3%;'></a></li>
+            <li><a href="#" class="instagram"><img src="{% static 'images/Link-Foot.png' %}" alt="Background Image" style='width:80%;margin-top: 3%;margin-left: -3%;'></a></li>
           </ul>
         </div>
 

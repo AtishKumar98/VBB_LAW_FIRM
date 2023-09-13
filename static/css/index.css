@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins:wght@400;500;600&display=swap');
 
 
 body{
@@ -12,11 +12,16 @@ body{
 .btn-outline-primary {
   color: gold;
   border-color: gold;
+  width: 12%;
 }
-
+.btn-outline-dark{
+  width: 20%;
+  margin-top: 3%;
+  font-weight: 500;
+}
 .btn-outline-primary:hover {
   color: black;
-  border-color: gold;
+  border-color: none;
   background-color: gold;
 }
 
@@ -55,7 +60,7 @@ body{
 .btn-dark {
   background-color: black;
   font-size: medium;
-  width: 147%;
+  width: 100%;
   color: gold;
 }
 .navbar-nav{
@@ -104,11 +109,12 @@ body{
   font-size: 40%;
 }
  .heading_services h1 {
-    width: 78%;
+    width: 87%;
     margin-top: 2%;
+    font-weight: 500;
     font-size: xx-large;
     font-family: 'Poppins', sans-serif;
-    color: black; margin-top: 4%;  border-bottom: 2px solid goldenrod;
+    color: black; margin-top: 4%; 
   }
 
 .quote_section {
@@ -185,7 +191,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: linear-gradient(-180deg, goldenrod, white);
+  background-image: linear-gradient(-180deg, #FFDB6D, white);
 }
 
 .textual_placements {
@@ -210,14 +216,16 @@ body{
 }
 
 .textual_placements p {
-  font-size: x-large;
+  font-size: larger;
   margin-top: 4%;
   width: 94%;
 }
 .textual_placements h1{
-  font-size: xx-large;
-  font-weight: 600;
+  font-size: 190%;
+  text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;
+  font-weight: 500;
   width: 60%;
+  line-height: 40px;
 }
 .image_secton img {
   width: 100%;
@@ -236,11 +244,12 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 5.5px;
+  letter-spacing: 2px;
 }
 
 .quote_para p {
-  width: 50%;
+  width: 75%;
+  font-size: larger;
 }
 
 .social_section {
@@ -251,7 +260,7 @@ body{
 }
 
 .social_handle_heading {
-  width: 28%;
+  width: 29%;
 }
 
 .social_handle_blocks {
@@ -309,14 +318,18 @@ body{
   margin-top: 3%;
   margin-bottom: 3%;
   width: 35%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   border-radius: 2%;
-  padding: 3%;
+  padding: 2%;
 }
-
+.card form{
+  margin-top: 5%;
+}
 .form_section {
-  background-image: url("./Maps_BG@2x.png");
-  background-size: cover;
+  background-image: url("../images/Maps_BG@2x.png");
+  background-size: 100% 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -511,7 +524,7 @@ body{
 
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
 .navbar-expand-md .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -533,4 +546,4 @@ body{
   .card{
     width: 60%;
   }
-  }
+  } */
