@@ -9,6 +9,7 @@ urlpatterns = [
     path('why_us/', views.whyus , name='whyus'),
     path('ourteam/', views.ourteam , name='ourteam'),
     path('contact/', views.contact , name='contact'),
+    path('our_services/', views.our_services , name='our_services'),
     path('profile/<str:profile_id>/', views.profile_view, name='profile_view'),
 
 ]

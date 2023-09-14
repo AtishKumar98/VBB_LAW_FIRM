@@ -186,3 +186,7 @@ def profile_view(request, profile_id):
 def contact(request):
     context = {'contact':'contact'}
     return render(request,'contact.html',context)
+
+def our_services(request):
+    context = {'our_services':'our_services'}
+    return render(request,'our_services.html',context)
