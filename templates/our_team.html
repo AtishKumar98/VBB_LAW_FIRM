@@ -124,13 +124,17 @@
    
 
 }
-
+.quote_image{
+  width: 75%;
+}
 
   @media (max-width: 768px) {
 
     .team {
       flex-direction: column;
       width: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
 
@@ -139,9 +143,12 @@
       margin-left: 10%;
 
     }
+.card{
+  width: 70% !important;
 
+}
     .team .card {
-    margin-left: 18%;
+    margin-left: 9%;
 
     width: 80%;
     border: none;
@@ -154,7 +161,24 @@
     ;
     font-family: 'Times New Roman', Times, serif;
   }
+.card-body h5 {
+ font-size: medium;
+ margin-top: -5%;
+}
+.card-body p {
+ font-size: small;
+}
+.list-group-item{
+  font-size: smaller;
+  margin-top: -5%;
+}
+ .btn-primary{
+  margin-top: -5%;
+}
 
+.quote_image{
+  width: 100%;
+}
   }
 </style>
 <hr style="opacity: 1; background-color: rgb(185, 139, 30); height: 12px;border:1px;width: 100%;margin-bottom: 0%;margin-top: 0%;border-top: 1px solid rgb(201, 150, 9);">
@@ -169,7 +193,7 @@
 </div>
 <div class="container">
   <div class="data_quote">
-    <img src = '../static/images/ourteam-text.png' style ='width: 75%;'/>
+    <img class="quote_image" src = '../static/images/ourteam-text.png'/>
     <!-- <blockquote> Welcome to <b>VBB Legal</b> We take pride in introducing you to our exceptional team of legal
       professionals who are dedicated to providing comprehensive and innovative legal solutions. Our diverse and
       experienced team is committed to delivering excellence in every aspect of the law. Here, you'll find a group of
