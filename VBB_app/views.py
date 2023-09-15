@@ -87,89 +87,59 @@ An influential figure in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv.
         'role': 'Co-Founder',
         'image':'/../static/images/Adv._Binita_Y. Sharma.png',
         'description':"""
-    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 
-    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+    <p>Adv. Binita Sharma, co- founder and partner of VBB Legal is a distinguished legal professional with a wealth of experience across diverse legal domains. Her extensive practice encompasses High Court litigation, Consumer Court disputes, Real Estate Regulatory Authority (RERA) matters, Debt Recovery Tribunal (DRT) cases, and a comprehensive range of Civil and Criminal proceedings in Magistrate and Session Courts.<br>
 
-    <h5>A Noble Profession:</h2>
+With a proven track record of successfully representing clients in these varied jurisdictions, Adv. Binita Sharma is renowned for her strategic acumen, meticulous approach, and unwavering commitment to securing favorable outcomes. Her deep understanding of the intricacies of each legal area allows her to offer comprehensive and tailored solutions to clients seeking resolution in complex legal landscapes.<br>
 
-    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
+Adv. Binita Sharma's dedication to client advocacy extends beyond the courtroom. She is a trusted advisor who goes the extra mile to educate and empower clients, ensuring they make well-informed decisions. Her exceptional communication skills, combined with a passion for justice, make her a sought-after legal professional.<br>
 
-    <h5>Education and Training:</h2>
-
-    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
-
-    <!-- Add more content as needed -->
-
-    <h5>Conclusion:</h2>
-
-    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+Based in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv. Binita Sharma has earned respect and recognition within the legal community. Her reputation is a testament to her unwavering pursuit of excellence and her ability to navigate the legal intricacies of High Court proceedings, Consumer Court matters, RERA disputes, DRT cases, and the full spectrum of Civil and Criminal litigation in Magistrate and Session Courts.</p>
 """ ,
     },
 
      'profile3': {
         'name': 'B D Tripathi',
-        'role': 'Lawyer Core-Team',
-        'image':'/../static/images/BD_Tripathi-removebg-preview_by@2x.png',
+        'role': 'Advocate Bombay High Court and Supreme Court of India.',
+        'image':'/../static/images/B_D_Tripathi.png',
         'description':"""
-    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 
-    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
+    <p>With an illustrious career spanning 28 years, Adv. B.D. Tripathi stands as a distinguished senior legal counsel at VBB Legal, a prominent law firm based in Mumbai and Navi Mumbai. A stalwart in the field of law, Adv. Tripathi has garnered unparalleled experience across a spectrum of legal domains, ranging from criminal and civil litigation to intricate matters in banking, insurance, labor law, PF, ESIC, income tax, and corporate laws.<br>
 
-    <h5>A Noble Profession:</h2>
+Renowned for their formidable presence in courtrooms, Adv. Tripathi has masterfully represented clients at all levels of the judiciary, including appearances before the esteemed Supreme Court of India. Their legal acumen extends further to encompass industrial matters, NDPS cases, FEMA, and PMLA, reflecting a profound understanding of intricate legal frameworks.<br>
 
-    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
-
-    <h5>Education and Training:</h2>
-
-    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
-
-    <!-- Add more content as needed -->
-
-    <h5>Conclusion:</h2>
-
-    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commitment have earned them a well-deserved reputation as a guiding force in the legal realm. Their contributions extend beyond legal circles, making a lasting impact on the lives of individuals and the broader legal landscape. As a senior legal counsel at VBB Legal, Adv. B.D. Tripathi continues to navigate complex legal challenges with finesse, setting a benchmark for excellence in the legal profession.</p>
 """ ,
     },
 
      'profile4': {
         'name': 'Pritesh H. Sahu',
-        'role': 'Lawyer Core-Team',
-        'image':'/../static/images/Pritesh_H_Sahu__legal_Executiv@2x.png',
+        'role': 'Advocate Bombay High Court',
+        'image':'/../static/images/Pritesh_H_Sahu.png',
         'description':"""
-    <h4>The Legal Guardian: Navigating the Complex World of Law</h4>
 
-    <p>Lawyers, often referred to as the architects of justice, are the unsung heroes of our society. They are the individuals who provide a voice to those in need, defending their rights, and ensuring that justice prevails in the face of adversity. Lawyers play a pivotal role in upholding the principles of law and order in our increasingly complex world.</p>
-
-    <h5>A Noble Profession:</h2>
-
-    <p>The legal profession is one of the oldest and most respected callings in human history. Lawyers have existed in various forms in nearly all civilizations, dating back to ancient Greece, Rome, and beyond. The role of lawyers has evolved over time, but their fundamental purpose has remained consistent: to advocate for their clients' rights and uphold the rule of law.</p>
-
-    <h5>Education and Training:</h2>
-
-    <p>Becoming a lawyer is not an easy path. It requires a rigorous educational journey that typically begins with a bachelor's degree in a related field. Most aspiring lawyers then pursue a Juris Doctor (JD) degree from an accredited law school. This graduate-level program is designed to equip students with the legal knowledge and skills necessary to practice law.</p>
-
-    <!-- Add more content as needed -->
-
-    <h5>Conclusion:</h2>
-
-    <p>In a world where legal complexities are ever-present, lawyers stand as the guardians of justice, ensuring that the principles of fairness and equity prevail. They are educators, advisors, advocates, and problem solvers, dedicated to upholding the rule of law and protecting the rights of individuals and organizations alike. With unwavering commitment to ethical principles and an unyielding pursuit of justice, lawyers are an essential pillar of a just and orderly society, making the world a better place, one case at a time.</p>
+    <p>Adv. Pritesh Sahu is an accomplished legal professional associated with VBB Legal and recognized for their expertise in civil and criminal matters.<br>
+      With a robust presence in the Bombay High Court, Adv. Sahu brings a wealth of knowledge and experience to the forefront of legal proceedings.<br>
+        Their adept handling of intricate legal issues, combined with a commitment to justice, has earned them a reputation as a dependable advocate.<br>
+          With a focus on delivering favorable outcomes for clients, Adv. Pritesh Sahu continues to make significant contributions within the realm of law, setting a remarkable standard of excellence.</p>
 """ ,
     },
 
      'profile5': {
         'name': 'Adv. Dhwani S. Rughani',
         'role': 'A Rising Advocate',
-        'image':'/../static/images/BD_Tripathi-removebg-preview_by@2x.png',
+        'image':'/../static/images/B_D_Tripathi.png',
         'description':"""
-    <h4>Dhwani S. Rughani, a dynamic advocate at VBB Legal, shines as a promising newcomer in the legal arena.</h4>
 
-    <p>Dhwani's dedication to justice is evident through her areas of expertise:<br/>
+    <p>
+    Dhwani S. Rughani, a dynamic advocate at VBB Legal, shines as a promising newcomer in the legal arena.
+    Dhwani's dedication to justice is evident through her areas of expertise:<br/>
 
 Intellectual Property Law: Skillfully navigating the complexities of patents, trademarks, and copyrights.<br/>
 Medical Negligence Cases: Fearlessly advocating for clients affected by medical malpractice, ensuring their voices are heard.<br/>
 Cases Against Government: Tenaciously safeguarding individual rights in legal battles against state and central government entities.<br/>
-As a fresh advocate, Dhwani's impact is felt at VBB Legal, where her commitment to ethics and diligence align seamlessly with the firm's values. With each case she handles, Dhwani demonstrates an unwavering commitment to justice and a promising future in the legal profession.</p>
+As a fresh advocate, Dhwani's impact is felt at VBB Legal, where her commitment to ethics and diligence align seamlessly with the firm's values. With each case she handles, Dhwani demonstrates an unwavering commitment to justice and a promising future in the legal profession.
+</p>
 """ ,
     },
 }
