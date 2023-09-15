@@ -27,6 +27,25 @@
    li .nav-item{
     margin: 10%;
    }
+
+   @media (max-width: 768px) {
+   
+   .about_us_header{
+    width: 23%;
+   }
+   .about_us_header2{
+    width: 25%;
+   }
+   .about_us_header3{
+    width: 22%;
+   }
+   .about_us_header4{
+    width: 20%;
+   }
+   .about_us_header5{
+    width: 30%;
+  }
+  }
   </style>
 </head>
 <body>
@@ -52,19 +71,19 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="/about_us/"> {% if abouts_us  %} <p style="color: goldenrod; border-bottom: 2px solid goldenrod; border-bottom-width: 10% !important;"> {% endif %} About Us</p></a>
+          <a class="nav-link" href="/about_us/"> {% if abouts_us  %} <p class = 'about_us_header'style="color: goldenrod; border-bottom: 2px solid goldenrod; "> {% endif %} About Us</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/ourteam/"> {% if ourteam  %} <p style="color: goldenrod; border-bottom: 2px solid goldenrod; border-bottom-width: 10% !important;"> {% endif %} Our Team</p></a>
+          <a class="nav-link" href="/ourteam/"> {% if ourteam  %} <p class = 'about_us_header2' style="color: goldenrod; border-bottom: 2px solid goldenrod;"> {% endif %} Our Team</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="/our_services/"> {% if our_services  %} <p style="color: goldenrod; border-bottom: 2px solid goldenrod; border-bottom-width: 10% !important;">{% endif %} Services</p></a>
+          <a class="nav-link"  href="/our_services/"> {% if our_services  %} <p class = 'about_us_header3' style="color: goldenrod; border-bottom: 2px solid goldenrod; ">{% endif %} Services</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/why_us/"> {% if whyus  %} <p style="color: goldenrod; border-bottom: 2px solid goldenrod; border-bottom-width: 10% !important;"> {% endif %} Why Us</p></a>
+          <a class="nav-link" href="/why_us/"> {% if whyus  %} <p  class = 'about_us_header4'style="color: goldenrod; border-bottom: 2px solid goldenrod; "> {% endif %} Why Us</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="/contact/"> {% if contact  %} <p style="color: goldenrod; border-bottom: 2px solid goldenrod; border-bottom-width: 10% !important;"> {% endif %}Contact Us</p></a>
+          <a class="nav-link"  href="/contact/"> {% if contact  %} <p class = 'about_us_header5' style="color: goldenrod; border-bottom: 2px solid goldenrod; "> {% endif %}Contact Us</p></a>
         </li>
       </ul>
     </div>
