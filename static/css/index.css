@@ -633,3 +633,23 @@ body{
     width: 60%;
   }
   } */
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1366px) 
+  {
+    .quote_section{
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    .textual_placements h1{
+      font-size: 128%;
+    }
+    .textual_placements p{
+      font-size: medium;
+    }
+    .btn-outline-dark{
+      width: 40%;
+    }
+  }
