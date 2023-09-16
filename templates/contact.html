@@ -25,6 +25,19 @@
     .btn {
       width: 40%;
     }
+
+    /* #map{
+      border-radius: 10px;
+      height: 400px;
+      transition: 0.5s ease-in-out;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    #map:hover{
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    } */
+
     .for_background{
         background-image: url("{% static 'images/Maps_BG@2x.png' %}");  
         background-size: cover;
@@ -48,6 +61,7 @@
         min-height: auto;
         padding: 6%;
     }
+    
     }
 </style>
 <div class="for_background">
@@ -104,10 +118,10 @@
             <ul style="list-style: disc; ">
             <li style="color: goldenrod;list-style-type: disc;
             font-size:25px;"><h5 style = 'color: black !important;  font-family: "Poppins", "sans-serif";font-weight: 500;'>Mumbai:<br>
-               <p style = "color: black !important; font-size: medium; font-weight: 400;"> 424, MOHID HEIGHTS, RTO Rd, Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053. </p>
+               <p style = "color: black !important; font-size: medium; font-weight: 400;">Swapna Sakar Society, beside Versova Metro Station, Andheri West, Mumbai- 400053 </p>
          </h5></li>
             <li style="color: goldenrod;font-size:25px;"><h5 style = 'color: black;  font-family: "Poppins", "sans-serif" !important;font-weight: 500;'>Navi Mumbai: 
-              <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium; font-weight: 400;"> Flat No. 303, Pearl Apartment, At Rees, Rasayani, 410222.</p></h5></li>
+              <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium; font-weight: 400;">Office No 303, Pearl Apartment, At Rees, Post Mohopada, Near Panvel, Navi Mumbai 410222</p></h5></li>
         </ul>
         <div id="map" style="height: 400px;"></div>
         
@@ -121,15 +135,15 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
   // Initialize the map
-  var map = L.map('map').setView([19.13421362063134, 72.82662634898307], 13); // Replace with your location's coordinates and desired zoom level
+  var map = L.map('map').setView([19.130605,72.822679], 17); // Replace with your location's coordinates and desired zoom level
 
   // Add a tile layer from OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+      maxZoom: 25,
   }).addTo(map);
 
   // Add a marker to the map
-  L.marker([19.13421362063134, 72.82662634898307]).addTo(map) // Replace with your location's coordinates
+  L.marker([19.130605, 72.822679]).addTo(map) // Replace with your location's coordinates
       .bindPopup('VBB LAW FIRM'); // Replace with a popup message if desired
 </script>
 {% endblock content %}
