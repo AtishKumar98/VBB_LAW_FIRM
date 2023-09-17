@@ -55,7 +55,8 @@ def ourteam(request):
 
 profiles = {
     'profile1': {
-        'name': 'Vinayak Mishra',
+        'name': 'Adv. Vinayak Mishra',
+        'desg': 'Founder and Partner - VBB Legal',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
         'image':'/../static/images/Vinayak_Mishra.png',
         'description': """
@@ -84,7 +85,8 @@ An influential figure in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv.
     },
     'profile2': {
         'name': 'Adv. Binita Y. Sharma',
-        'role': 'Co-Founder',
+        'desg': 'Founder and Partner - VBB legal',
+        'role': 'Advocate Bombay High Court and Supreme Court of india',
         'image':'/../static/images/Adv._Binita_Y. Sharma.png',
         'description':"""
 
@@ -100,6 +102,7 @@ Based in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv. Binita Sharma h
 
      'profile3': {
         'name': 'B D Tripathi',
+        'desg': 'Senior Associate',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
         'image':'/../static/images/B_D_Tripathi.png',
         'description':"""
@@ -114,6 +117,7 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
 
      'profile4': {
         'name': 'Pritesh H. Sahu',
+        'desg': 'Legal Associate',
         'role': 'Advocate Bombay High Court',
         'image':'/../static/images/Pritesh_H_Sahu.png',
         'description':"""
@@ -127,7 +131,8 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
 
      'profile5': {
         'name': 'Adv. Dhwani S. Rughani',
-        'role': 'A Rising Advocate',
+        'desg': 'Legal Associate',
+        'role': 'Advocate Bombay High Court',
         'image':'/../static/images/B_D_Tripathi.png',
         'description':"""
 
