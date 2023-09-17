@@ -420,9 +420,17 @@ body{
     padding-right: 1%;
     padding-left: 1%;
   }
-
+  .modal-title {
+    font-size: large;
+}
+.modal-body h5{
+  font-size: medium;
+}
   .navbar-brand img {
     width: 35%;
+  }
+  .modal-body p{
+    font-size: smaller;
   }
 
   .btn-dark {
