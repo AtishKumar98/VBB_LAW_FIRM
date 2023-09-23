@@ -133,7 +133,7 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
         'name': 'Adv. Dhwani S. Rughani',
         'desg': 'Legal Associate',
         'role': 'Advocate Bombay High Court',
-        'image':'/../static/images/B_D_Tripathi.png',
+        'image':'/../static/images/Dhwani.png',
         'description':"""
 
     <p>
