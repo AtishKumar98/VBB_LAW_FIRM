@@ -259,21 +259,16 @@
   <!-- Add this script tag at the bottom of your HTML file, just before the closing -->
 <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
 <script>
-    $(document).ready(function() {
-        // Check if the user has already acknowledged the message
-        if (!localStorage.getItem('modalShown')) {
-            // Show the modal
-            $('#myModal').modal('show');
-        }
+   $(document).ready(function() {
+    // Show the modal every time the page loads
+    $('#myModal').modal('show');
 
-        // Listen for the "I understand" button click
-        $('#understandBtn').click(function() {
-            // Set a flag in localStorage to remember the user's choice
-            localStorage.setItem('modalShown', 'true');
-            // Close the modal
-            $('#myModal').modal('hide');
-        });
+    // Listen for the "I understand" button click
+    $('#understandBtn').click(function() {
+        // Close the modal
+        $('#myModal').modal('hide');
     });
+});
 </script>
 
 </body>
