@@ -3,6 +3,8 @@
 {% block content %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <style>
+
+
     .full_page{
         display: flex;
         justify-content: center;
@@ -121,6 +123,7 @@
             <li style="color: goldenrod;list-style-type: disc;
             font-size:25px;"><h5 style = 'color: black !important;  font-family: "Poppins", "sans-serif";font-weight: 500;'>Mumbai:<br>
                <p style = "color: black !important; font-size: medium; font-weight: 400;">Swapna Sakar Society, beside Versova Metro Station, Andheri West, Mumbai- 400053 </p>
+               <p style = "color: black !important; font-size: medium; font-weight: 400;">424, MOHID HEIGHTS, RTO Rd, Suresh Nagar, Andheri West, Mumbai- 400053.</p>
          </h5></li>
             <li style="color: goldenrod;font-size:25px;"><h5 style = 'color: black;  font-family: "Poppins", "sans-serif" !important;font-weight: 500;'>Navi Mumbai: 
               <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium; font-weight: 400;">Office No 303, Pearl Apartment, At Rees, Post Mohopada, Near Panvel, Navi Mumbai 410222</p></h5></li>
@@ -136,6 +139,11 @@
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
+  var customIcon = L.divIcon({
+    className: 'custom-marker',
+    html: '&#x25CF;', // You can use other symbols or HTML content
+    iconSize: [20, 20], // Size of the icon
+});
   // Initialize the map
   var map = L.map('map').setView([19.130605,72.822679], 17); // Replace with your location's coordinates and desired zoom level
 
@@ -146,6 +154,15 @@
 
   // Add a marker to the map
   L.marker([19.130605, 72.822679]).addTo(map) // Replace with your location's coordinates
-      .bindPopup('VBB LAW FIRM'); // Replace with a popup message if desired
+      .bindPopup('VBB LAW FIRM Office'); // Replace with a popup message if desired
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+var marker = L.marker([19.130605, 72.822679],{ icon: customIcon }).addTo(map);
+// marker.bindPopup("<b>VBB LAW FIRM").openPopup();
+L.control.zoom({ position: 'bottomright' }).addTo(map);
+L.control.scale().addTo(map);
+
 </script>
 {% endblock content %}
