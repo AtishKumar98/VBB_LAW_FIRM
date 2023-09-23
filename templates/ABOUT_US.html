@@ -58,11 +58,13 @@ blockquote::after {
 .commitment_section{
     display : flex ;
     margin-top: 2.4%;
+    animation: slide-left-in 3s ease;
     flex-direction: row;
 }
 .expertise_section{
     display : flex ;
     margin-top: 2.4%;
+    animation:slide-right-in 3s ease;
     flex-direction: row;
 }
 .commitment{
@@ -205,6 +207,25 @@ justify-content: flex-end;
 align-items: center;
 flex-direction: column;
 
+}
+
+@keyframes slide-left-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slide-right-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 @media (max-width: 768px){
     .data_quote blockquote{
