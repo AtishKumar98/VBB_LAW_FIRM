@@ -275,28 +275,62 @@
       
 
 </div>
-
-
 <script>
-const buttons = document.querySelectorAll(".View_all");
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".View_all");
+    const dropdownLists = document.querySelectorAll(".custom-arrow-list");
+    let openDropdown = null;
 
-buttons.forEach((button) => {
-  button.addEventListener("click", function () {
-    const targetId = button.getAttribute("data-target");
-    const list = document.getElementById(targetId);
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const targetId = button.getAttribute("data-target");
+        const list = document.getElementById(targetId);
+        const card = button.closest(".card");
 
-    if (list.style.display === "none" || list.style.display === "") {
-      list.style.display = "block";
-      button.innerText = "Hide"; // Change button text to "Hide"
-    } else {
-      list.style.display = "none";
-      button.innerText = "View All"; // Change button text back to "View All"
+        if (list.style.display === "none" || list.style.display === "") {
+          // Close the currently open dropdown (if any)
+          if (openDropdown) {
+            openDropdown.style.display = "none";
+            openDropdown.closest(".card").style.height = "auto";
+          }
+
+          list.style.display = "block";
+          button.innerText = "Hide"; // Change button text to "Hide"
+          card.style.height = "auto"; // Reset the card's height
+          openDropdown = list;
+        } else {
+          list.style.display = "none";
+          button.innerText = "View All"; // Change button text back to "View All"
+          card.style.height = "auto"; // Reset the card's height
+          openDropdown = null;
+        }
+      });
+    });
+
+    // Function to get query parameters from URL
+    function getQueryParams() {
+      const queryParams = new URLSearchParams(window.location.search);
+      return queryParams.get("openDropdown");
     }
 
-    // Adjust the card's height when the content is toggled
-    const card = button.closest(".card");
-    card.style.height = "auto"; // Reset the card's height
+    // Check if the URL parameter matches a button and open the corresponding dropdown
+    const openDropdownIndex = getQueryParams();
+    if (openDropdownIndex !== null) {
+      const index = parseInt(openDropdownIndex);
+      if (!isNaN(index) && index >= 0 && index < buttons.length) {
+        const targetButton = buttons[index];
+        const targetId = targetButton.getAttribute("data-target");
+        const list = document.getElementById(targetId);
+        list.style.display = "block";
+        targetButton.innerText = "Hide";
+        targetButton.closest(".card").style.height = "auto"; // Reset the card's height
+        openDropdown = list;
+      }
+    }
   });
-});
-  </script>
+</script>
+
+
+
+
 {% endblock content %}
