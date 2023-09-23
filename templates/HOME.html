@@ -259,9 +259,13 @@
   <!-- Add this script tag at the bottom of your HTML file, just before the closing -->
 <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
 <script>
-   $(document).ready(function() {
-    // Show the modal every time the page loads
-    $('#myModal').modal('show');
+ $(document).ready(function() {
+    // Check if the user has visited the site in this session
+    if (!sessionStorage.getItem('visited')) {
+        // If not, show the modal and set a flag to remember the visit for this session
+        $('#myModal').modal('show');
+        sessionStorage.setItem('visited', 'true');
+    }
 
     // Listen for the "I understand" button click
     $('#understandBtn').click(function() {
@@ -269,6 +273,7 @@
         $('#myModal').modal('hide');
     });
 });
+
 </script>
 
 </body>
