@@ -13,7 +13,7 @@ body{
   color: gold;
   border-color: gold;
   border: 1px solid gold;
-  width: 12%;
+  width: 65%;
 }
 .btn-outline-dark{
   width: 70%;
@@ -485,7 +485,7 @@ body{
   width: 94%;
 }
 .btn-outline-primary{
-  width: 52%;
+  width: 72%;
 }
 .btn{
   font-size: .8rem;
