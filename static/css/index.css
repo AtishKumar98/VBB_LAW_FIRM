@@ -16,7 +16,7 @@ body{
   width: 12%;
 }
 .btn-outline-dark{
-  width: 20%;
+  width: 70%;
   margin-top: 3%;
   font-weight: 500;
 }
@@ -237,7 +237,7 @@ body{
 }
 .textual_placements h1{
   font-size: 190%;
-  text-shadow: 0 0 2px , 0 0 .2px #BEBEBE;
+  /* text-shadow: 0 0 2px , 0 0 .2px #BEBEBE; */
   font-weight: 500;
   width: 60%;
   line-height: 40px;
@@ -446,7 +446,7 @@ body{
     color: white;
   }
   .heading_services h1 {
-    width: 67%;
+    width: 80%;
     margin-top: 2%;
     font-weight: 500;
     font-size: large;
@@ -482,7 +482,7 @@ body{
   width: 100%;
 }
 .btn-outline-dark{
-  width: 50%;
+  width: 94%;
 }
 .btn-outline-primary{
   width: 52%;
@@ -660,7 +660,7 @@ body{
       font-size: medium;
     }
     .btn-outline-dark{
-      width: 40%;
+      width: 80%;
     }
   }
 /* IPAD MINI */
