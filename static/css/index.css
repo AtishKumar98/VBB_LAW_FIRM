@@ -1,6 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+.curved_line{
+  width: 10%;margin-left: 80%; margin-top: -.5%;
+}
+ .modal-title {
+        text-align: center;
+        width: 100%;
+    }
+    .exper28{
+      height: 100%;
+      padding: 1%;
+      background-color: black;
+    }
+    .main_xp{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+.xp_box{
+  height: 100%;
+  width: 17%;
+  margin: 1%;
+  margin-top: 2%;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  border: 2px solid rgba(255,191,0,1);
+}
+.xp_box h1{
+  font-size: 6rem;
+  color: rgba(255,191,0,1);
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.xp_box p{
+  font-size: 50%;
+  color: rgba(255,191,0,1);
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.xp_text{
+  width: 83%;
+  margin-top: 2%;
+  margin-left: 4%;
+  color: rgba(255,191,0,1);
+  text-transform: uppercase;
+  text-align: left;
+}
+.xp_text h4{
+  font-size: 150%;
+}
+.xp_text p{
+  color: white;
+  text-transform: none;
+  font-size: 125%;
+}
 
 body{
   font-family: 'Poppins', sans-serif;
@@ -215,6 +277,10 @@ body{
   height: 100%;
   display: flex;
   text-align: left;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  will-change: transform, opacity;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -229,7 +295,14 @@ body{
   width: 70%;
 
 }
+.show{
+opacity: 1;
+}
 
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
 .textual_placements p {
   font-size: larger;
   margin-top: 4%;
@@ -250,6 +323,7 @@ body{
 .quote_section {
   background-color: black;
   height: 40vh;
+  
   color: white;
 }
 
@@ -265,6 +339,7 @@ body{
 .quote_para p {
   width: 75%;
   font-size: larger;
+  
 }
 
 .social_section {
@@ -378,6 +453,7 @@ margin-top: 3%;
   align-items: center;
 
 }
+
 @media (min-width: 742px) and (max-height:882px) {
   .request_a_call_back {
    width: 40%; 
@@ -412,6 +488,44 @@ margin-top: 3%;
 }
 
 @media (max-width: 768px) {
+
+  .curved_line{
+    width: 10%;margin-left: 80%; margin-top: -.5%; display:none;
+  }
+  .xp_box h1{
+    font-size: 2rem;
+    color: rgba(255,191,0,1);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .xp_box p{
+    font-size: 50%;
+    color: rgba(255,191,0,1);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .xp_text{
+    width: 83%;
+    margin-top: 2%;
+    margin-left: 4%;
+    color: rgba(255,191,0,1);
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .xp_text h4{
+    font-size: 120%;
+  }
+  .xp_text p{
+    color: white;
+    text-transform: none;
+    font-size: 85%;
+  }
+
+
+
+
 body{
   overflow-x: hidden;
 }

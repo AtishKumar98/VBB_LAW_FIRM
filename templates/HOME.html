@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
   {% load static %}
-{% block content %}
-<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  {% block content %}
+<style>
+
+</style>
+
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Include Bootstrap JS -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-<style>
- .modal-title {
-        text-align: center;
-        width: 100%;
-    }
 
-</style>
 
 <div class="modal fade" id="myModal">
   <div class="modal-dialog modal-lg">
@@ -45,6 +44,21 @@
 </div>
 <div class="image_for_banner">
   <img src ="{% static 'images/scales-2.png' %}">
+</div>
+<div class="exper28">
+  <div class="container">
+    <div class="main_xp">
+      <div class="xp_box">
+      <h1>28 <br> <p>Years</p></h1>
+      </div>
+      <div class="xp_text">
+        <h4>28 years of Right Experience</h4>
+        <p>
+          We utilise rich experience of more than 28 years of advocacy to effectively<br> fight against injustice to our clients.
+        </p>
+        </div>
+    </div>
+  </div>
 </div>
 <div class="services" style="background-image: url( {% static 'images/VI_BLACK_2000x2000_2-14.png' %}); background-size: contain;" >
   <div class="container">
@@ -104,8 +118,8 @@
 <div class="quote_section" style="">
   <div class="container">
     <div class="heading_quote" style="">
-      <h1><b style="font-weight: 400;">We dont Advertise, We <b style="color: rgba(255,219,109,1);font-weight: 600;">Empower</b></b></h1>
-      <img src ='../static/images/line.png' style="width: 10%;margin-left: 50%; margin-top: -.5%;">
+      <h1><b style="font-weight: 400;">Where Experience Meets Empathy leading to  <b style="color: rgba(255,219,109,1);font-weight: 600;">Success</b></b></h1>
+      <img src ='../static/images/line.png' class = 'curved_line'style="">
     </div>
     <div class="quote_para mt-4" style=" display: flex;
     flex-direction: column;
@@ -123,7 +137,7 @@
   </div>
 </div>
 <div class="placements_section">
-  <div class="textual_placements">
+  <div class="textual_placements animate">
 
     <h1>A place where exceptional performances thrive.</h1>
     <p>The leaders and professionals at VBB Legal demonstrate outstanding expertise in their respective fields. Our team members are well-prepared and empowered to provide exceptional services. In addition to offering expert advice to clients both locally and internationally, we strongly believe in fostering the comprehensive growth of our individuals, contributing to the advancement of the Indian legal profession and community.</p>
@@ -149,6 +163,7 @@
      <a href = 'https://www.instagram.com/vbblegal/'><img src="{% static 'images/Instagram.png' %}"   class= 'block_under_sp' alt="Background Image" style=''></a>
      <a href = 'https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU'><img src="{% static 'images/Facebook.png' %}"    class= 'block_under_sp' alt="Background Image" style=''></a>
      <a href = 'https://twitter.com/vbblegal'><img src="{% static 'images/Twitter.png' %}"     class= 'block_under_sp' alt="Background Image" style=''></a>
+     <a href = 'https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in'><img src="{% static 'images/LinkedIn.png' %}"    class= 'block_under_sp' alt="Background Image" style=''></a>
      <a href = 'https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in'><img src="{% static 'images/LinkedIn.png' %}"    class= 'block_under_sp' alt="Background Image" style=''></a>
     
     </div>
@@ -273,6 +288,9 @@
         $('#myModal').modal('hide');
     });
 });
+
+</script>
+<script defer src="../static/dist/js/Main.js">
 
 </script>
 
