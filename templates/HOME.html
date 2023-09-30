@@ -285,7 +285,6 @@
         $('#myModal').modal('hide');
     });
 });
-
 </script>
 <script defer src="../static/dist/js/Main.js">
 
@@ -327,7 +326,46 @@
         //     });
         // });
 </script>
+<script>
+   $(document).ready(function() {
+            // Check if the user has visited the site in this session
+            if (!sessionStorage.getItem('visited')) {
+                // If not, show the modal and set a flag to remember the visit for this session
+                $('#myModal').modal('show');
+                sessionStorage.setItem('visited', 'true');
+            }
 
+            // Listen for the "I understand" button click
+            $('#understandBtn').click(function() {
+                // Close the modal
+                $('#myModal').modal('hide');
+
+                // Function to update the counter and display
+                function updateCounter() {
+                    // Check if the counter has been set in session storage
+                    if (!sessionStorage.getItem('counter')) {
+                        // If not, initialize it to 0
+                        sessionStorage.setItem('counter', '0');
+                    }
+
+                    // Get the current counter value from session storage and update the display
+                    const counterElement = document.getElementById('counter');
+                    const currentCounter = parseInt(sessionStorage.getItem('counter'));
+                    if (currentCounter < 28) {
+                        // Increment the counter if it's less than 28
+                        sessionStorage.setItem('counter', (currentCounter + 1).toString());
+                    }
+                    counterElement.textContent = sessionStorage.getItem('counter');
+                }
+
+                // Update the counter immediately when the page loads
+                updateCounter();
+
+                // Set up a timer to update the counter every 1000 milliseconds (1 second)
+                setInterval(updateCounter, 70);
+            });
+        });
+</script>
 </body>
 </html>
 
