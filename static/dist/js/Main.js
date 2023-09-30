@@ -1,5 +1,5 @@
-const text = document.querySelector('.textual_placements');
-const section = document.querySelector('.textual_placements');
+const text = document.querySelector('.placements_section');
+const section = document.querySelector('.placements_section');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
