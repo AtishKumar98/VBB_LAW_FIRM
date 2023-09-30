@@ -277,31 +277,32 @@
 </div><script>
   document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".View_all");
-
     buttons.forEach((button) => {
       button.addEventListener("click", function () {
         const targetId = button.getAttribute("data-target");
         const list = document.getElementById(targetId);
         const card = button.closest(".card");
 
-        if (list.style.display === "none" || list.style.display === "") {
-          // Close all open dropdowns
-          buttons.forEach((otherButton) => {
-            if (otherButton !== button) {
-              const otherTargetId = otherButton.getAttribute("data-target");
-              const otherList = document.getElementById(otherTargetId);
-              otherList.style.display = "none";
-              otherButton.innerText = "View All";
-            }
-          });
+        // Close all open dropdowns except the one clicked
+        buttons.forEach((otherButton) => {
+          if (otherButton !== button) {
+            const otherTargetId = otherButton.getAttribute("data-target");
+            const otherList = document.getElementById(otherTargetId);
+            otherList.style.display = "none";
+            otherButton.innerText = "View All";
+            const otherCard = otherButton.closest(".card");
+            otherCard.style.height = "50vh"; // Reset the other card's height
+          }
+        });
 
+        if (list.style.display === "none" || list.style.display === "") {
           list.style.display = "block";
-          button.innerText = "Hide"; // Change button text to "Hide"
-          card.style.height = "auto"; // Reset the card's height
+          card.style.height = "auto";
+          button.innerText = "View Less";
         } else {
           list.style.display = "none";
-          button.innerText = "View All"; // Change button text back to "View All"
-          card.style.height = "auto"; // Reset the card's height
+          card.style.height = "50vh";
+          button.innerText = "View All";
         }
       });
     });
@@ -318,15 +319,16 @@
       const index = parseInt(openDropdownIndex);
       if (!isNaN(index) && index >= 0 && index < buttons.length) {
         const targetButton = buttons[index];
-        const targetId = targetButton.getAttribute("data-target");
-        const list = document.getElementById(targetId);
-        list.style.display = "block";
-        targetButton.innerText = "Hide";
-        targetButton.closest(".card").style.height = "auto"; // Reset the card's height
+        targetButton.click(); // Simulate a click on the specified button
       }
     }
   });
 </script>
+
+
+
+
+
 
 
 
