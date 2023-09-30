@@ -274,12 +274,9 @@
       
       
 
-</div>
-<script>
+</div><script>
   document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".View_all");
-    const dropdownLists = document.querySelectorAll(".custom-arrow-list");
-    let openDropdown = null;
 
     buttons.forEach((button) => {
       button.addEventListener("click", function () {
@@ -288,21 +285,23 @@
         const card = button.closest(".card");
 
         if (list.style.display === "none" || list.style.display === "") {
-          // Close the currently open dropdown (if any)
-          if (openDropdown) {
-            openDropdown.style.display = "none";
-            openDropdown.closest(".card").style.height = "auto";
-          }
+          // Close all open dropdowns
+          buttons.forEach((otherButton) => {
+            if (otherButton !== button) {
+              const otherTargetId = otherButton.getAttribute("data-target");
+              const otherList = document.getElementById(otherTargetId);
+              otherList.style.display = "none";
+              otherButton.innerText = "View All";
+            }
+          });
 
           list.style.display = "block";
           button.innerText = "Hide"; // Change button text to "Hide"
           card.style.height = "auto"; // Reset the card's height
-          openDropdown = list;
         } else {
           list.style.display = "none";
           button.innerText = "View All"; // Change button text back to "View All"
           card.style.height = "auto"; // Reset the card's height
-          openDropdown = null;
         }
       });
     });
@@ -324,11 +323,11 @@
         list.style.display = "block";
         targetButton.innerText = "Hide";
         targetButton.closest(".card").style.height = "auto"; // Reset the card's height
-        openDropdown = list;
       }
     }
   });
 </script>
+
 
 
 

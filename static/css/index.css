@@ -506,10 +506,11 @@ margin-top: 3%;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 1%;
   }
   .xp_text{
     width: 83%;
-    margin-top: 2%;
+    margin-top: 7%;
     margin-left: 4%;
     color: rgba(255,191,0,1);
     text-transform: uppercase;
@@ -522,6 +523,7 @@ margin-top: 3%;
     color: white;
     text-transform: none;
     font-size: 50%;
+    
   }
 
 
