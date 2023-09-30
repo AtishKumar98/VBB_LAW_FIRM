@@ -71,10 +71,6 @@ profiles = {
 
     <p>Clients entrust their most intricate criminal cases to Adv. Vinayak D. Mishra, seeking his adept counsel and representation in Session Courts, High Courts, and even the exalted precincts of the Supreme Court. His remarkable success record in securing bail and anticipatory bail, coupled with his proficiency in post-criminal writ petition matters, special leave petitions, and execution proceedings, underscores his prowess in strategic advocacy and his unwavering commitment to justice.</p>
 
-    <!-- Add more content as needed -->
-
-    
-
     <p>As a founding partner at VBB Legal, Adv. Vinayak D. Mishra epitomizes an unparalleled commitment to client welfare, transcending conventional legal boundaries. His personalized guidance and steadfast support provide clients with a sense of empowerment as they navigate the intricacies of the legal system, including specialized proceedings such as special leave petitions and execution matters. His exceptional communication skills and profound dedication to justice have solidified his standing as an esteemed and sought-after legal practitioner.
 </p>
 <p>
@@ -85,12 +81,12 @@ An influential figure in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv.
     },
     'profile2': {
         'name': 'Adv. Binita Y. Sharma',
-        'desg': 'Founder and Partner - VBB legal',
+        'desg': 'Founder and Partner - VBB Legal',
         'role': 'Advocate Bombay High Court and Supreme Court of india',
         'image':'/../static/images/Adv._Binita_Y. Sharma.png',
         'description':"""
 
-    <p>Adv. Binita Sharma, co- founder and partner of VBB Legal is a distinguished legal professional with a wealth of experience across diverse legal domains. Her extensive practice encompasses High Court litigation, Consumer Court disputes, Real Estate Regulatory Authority (RERA) matters, Debt Recovery Tribunal (DRT) cases, and a comprehensive range of Civil and Criminal proceedings in Magistrate and Session Courts.<br>
+    <p>Adv. Binita Sharma, Founder and partner of VBB Legal is a distinguished legal professional with a wealth of experience across diverse legal domains. Her extensive practice encompasses High Court litigation, Consumer Court disputes, Real Estate Regulatory Authority (RERA) matters, Debt Recovery Tribunal (DRT) cases, and a comprehensive range of Civil and Criminal proceedings in Magistrate and Session Courts.<br>
 
 With a proven track record of successfully representing clients in these varied jurisdictions, Adv. Binita Sharma is renowned for her strategic acumen, meticulous approach, and unwavering commitment to securing favorable outcomes. Her deep understanding of the intricacies of each legal area allows her to offer comprehensive and tailored solutions to clients seeking resolution in complex legal landscapes.<br>
 
