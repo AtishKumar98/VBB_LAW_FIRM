@@ -519,6 +519,22 @@ flex-direction: column;
         </div>
     </div> -->
 </div>
+
+    <div class="exper28 mt-5">
+        <div class="container">
+            <div class="main_xp">
+                <div class="xp_box">
+                    <h1><span id="counter">28</span><br><p>Years</p></h1>
+                </div>
+                <div class="xp_text" id="triggerDivision">
+                    <h4>28 years of Right Experience</h4>
+                    <p>
+                        We utilise rich experience of more than 28 years of advocacy to effectively<br> fight against injustice to our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="container">
     <div class="VBB_diff mb-5 mt-5">
 
@@ -537,5 +553,59 @@ flex-direction: column;
         </a>
     </div>
 </div>
+<script>
+    // Get a reference to the span element with the id "counter"
+    const counterSpan = document.getElementById("counter");
+
+    // Set the initial count value to 0
+    let count = 0;
+
+    // Flag to check if the counter has started
+    let counterStarted = false;
+
+    // Function to update the counter and display it
+    function updateCounter() {
+        // Increment the count
+        count++;
+
+        // Limit the counter to 28
+        if (count > 28) {
+            count = 28;
+        }
+
+        // Update the text inside the span element with the new count
+        counterSpan.textContent = count;
+    }
+
+    // Function to start the counter
+    function startCounter() {
+        // Check if the counter has already started
+        if (!counterStarted) {
+            counterStarted = true;
+
+            // Use setInterval to update the counter every 1000 milliseconds (1 second)
+            const counterInterval = setInterval(updateCounter, 50);
+        }
+    }
+
+    // Function to handle the scroll event
+    function handleScroll() {
+        // Get the position of the trigger division
+        const triggerDivision = document.getElementById("triggerDivision");
+        const triggerDivisionTop = triggerDivision.getBoundingClientRect().top;
+
+        // Check if the trigger division is in the viewport and the counter is not yet at 28
+        if (triggerDivisionTop <= window.innerHeight && count < 28) {
+            // Start the counter when it's in the viewport
+            startCounter();
+        }
+    }
+
+    // Attach the scroll event listener to the window
+    window.addEventListener("scroll", handleScroll);
+
+    // Check if the trigger division is initially in the viewport
+    handleScroll();
+</script>
 
     {% endblock content %}

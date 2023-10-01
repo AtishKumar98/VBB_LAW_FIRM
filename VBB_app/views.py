@@ -17,7 +17,7 @@ def index(request):
         email = MIMEMultipart()
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
-        email['To']="atishkumar31518@gmail.com"
+        email['To']="vbblegalmumbai@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
         #   mails_to = ' , '.join(mail_from) if True else you
