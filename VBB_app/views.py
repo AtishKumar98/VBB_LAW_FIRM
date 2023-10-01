@@ -14,7 +14,6 @@ def index(request):
         phone = request.POST.get('phone')
         areaOfInterest = request.POST.get('areaOfInterest')
         message = request.POST.get('message')
-        print(name,useremail,'#######')
         email = MIMEMultipart()
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
@@ -97,7 +96,7 @@ Based in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv. Binita Sharma h
     },
 
      'profile3': {
-        'name': 'B D Tripathi',
+        'name': 'Adv. B D Tripathi',
         'desg': 'Senior Associate',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
         'image':'/../static/images/B_D_Tripathi.png',
@@ -112,7 +111,7 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
     },
 
      'profile4': {
-        'name': 'Pritesh H. Sahu',
+        'name': 'Adv. Pritesh H. Sahu',
         'desg': 'Legal Associate',
         'role': 'Advocate Bombay High Court',
         'image':'/../static/images/Pritesh_H_Sahu.png',
