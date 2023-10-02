@@ -45,7 +45,7 @@
 <div class="exper28">
   <div class="container">
     <div class="main_xp">
-      <div class="xp_box">
+      <div class="xp_box" id ='xp_box'>
         <h1><span id="counter">28</span><br><p>Years</p></h1>
       </div>
       <div class="xp_text">
@@ -327,44 +327,59 @@
         // });
 </script>
 <script>
-   $(document).ready(function() {
-            // Check if the user has visited the site in this session
-            if (!sessionStorage.getItem('visited')) {
-                // If not, show the modal and set a flag to remember the visit for this session
-                $('#myModal').modal('show');
-                sessionStorage.setItem('visited', 'true');
-            }
+   // Get a reference to the span element with the id "counter"
+   const counterSpan = document.getElementById("counter");
 
-            // Listen for the "I understand" button click
-            $('#understandBtn').click(function() {
-                // Close the modal
-                $('#myModal').modal('hide');
+// Set the initial count value to 0
+let count = 0;
 
-                // Function to update the counter and display
-                function updateCounter() {
-                    // Check if the counter has been set in session storage
-                    if (!sessionStorage.getItem('counter')) {
-                        // If not, initialize it to 0
-                        sessionStorage.setItem('counter', '0');
-                    }
+// Flag to check if the counter has started
+let counterStarted = false;
 
-                    // Get the current counter value from session storage and update the display
-                    const counterElement = document.getElementById('counter');
-                    const currentCounter = parseInt(sessionStorage.getItem('counter'));
-                    if (currentCounter < 28) {
-                        // Increment the counter if it's less than 28
-                        sessionStorage.setItem('counter', (currentCounter + 1).toString());
-                    }
-                    counterElement.textContent = sessionStorage.getItem('counter');
-                }
+// Function to update the counter and display it
+function updateCounter() {
+    // Increment the count
+    count++;
 
-                // Update the counter immediately when the page loads
-                updateCounter();
+    // Limit the counter to 28
+    if (count > 28) {
+        count = 28;
+    }
 
-                // Set up a timer to update the counter every 1000 milliseconds (1 second)
-                setInterval(updateCounter, 70);
-            });
-        });
+    // Update the text inside the span element with the new count
+    counterSpan.textContent = count;
+}
+
+// Function to start the counter
+function startCounter() {
+    // Check if the counter has already started
+    if (!counterStarted) {
+        counterStarted = true;
+
+        // Use setInterval to update the counter every 1000 milliseconds (1 second)
+        const counterInterval = setInterval(updateCounter, 50);
+    }
+}
+
+// Function to handle the scroll event
+function handleScroll() {
+    // Get the position of the trigger division
+    const triggerDivision = document.getElementById("xp_box");
+    const triggerDivisionTop = triggerDivision.getBoundingClientRect().top;
+
+    // Check if the trigger division is in the viewport and the counter is not yet at 28
+    if (triggerDivisionTop <= window.innerHeight && count < 28) {
+        // Start the counter when it's in the viewport
+        startCounter();
+    }
+}
+
+// Attach the scroll event listener to the window
+window.addEventListener("scroll", handleScroll);
+
+// Check if the trigger division is initially in the viewport
+handleScroll();
+
 </script>
 </body>
 </html>
