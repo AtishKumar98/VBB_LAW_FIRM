@@ -3,8 +3,23 @@
 {% block content %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <style>
-
-
+  .whatsapp{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+    width: 100%;
+    align-items: center;
+  }
+  .whatsapp_text{
+    color: #4CAF50;
+  }
+.green_arrow{
+  width: 7%;
+  margin-left: 4%;
+}
+.whatsapp_image{
+  width: 10%;
+}
     .full_page{
         display: flex;
         justify-content: center;
@@ -132,6 +147,10 @@
               <p style = " font-family: 'Poppins', 'sans-serif'; color: black !important;font-size: medium; font-weight: 400;">Office No 303, Pearl Apartment, At Rees, Post Mohopada, Near Panvel, Navi Mumbai 410222</p></h5>
             </li>
         </ul>
+        <div class="whatsapp" style="color: black;font-weight: 500;">
+          <img src="../static/images/whatsapp.png" alt="" class="whatsapp_image" > Now feel free to <a href ='https://api.whatsapp.com/send?phone=918999403568&text=Hello, More Information Please' style="color: #4CAF50;margin-left: 1%;text-decoration: none;">Whatsapp US!</a><img class="green_arrow" src="../static/images/green-right-arrow.png" alt="">
+
+        </div>
         <div id="map"></div>
         
             <a href ='https://goo.gl/maps/zZKfoPc3t54uZov37' class="btn btn-primary mt-4" style='font-weight: 600;  background-color:#FFDB6D;color:black;text-transform: uppercase;'> Get Directions </a>
