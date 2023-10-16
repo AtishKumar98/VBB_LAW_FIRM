@@ -54,7 +54,7 @@ def ourteam(request):
 
 profiles = {
     'profile1': {
-        'name': 'Adv. Vinayak Mishra',
+        'name': 'Adv. Vinayak D Mishra',
         'desg': 'Founder and Partner - VBB Legal',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
         'image':'/../static/images/Vinayak_Mishra.png',
