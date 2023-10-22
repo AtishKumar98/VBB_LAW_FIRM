@@ -89,6 +89,26 @@
     </div>
 </div>
 </nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const requestCallButton = document.querySelector(".request_a_call_back a");
+  const navbarToggle = document.querySelector(".navbar-toggler");
+
+  if (requestCallButton && navbarToggle) {
+    requestCallButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetElement = document.querySelector("#form_section");
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        // Close the mobile navigation menu
+        navbarToggle.click();
+      }
+    });
+  }
+});
+</script>
   {% block content %}
   {% endblock content %}
   {% include 'footer.html'%}
