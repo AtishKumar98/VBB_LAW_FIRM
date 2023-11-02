@@ -171,7 +171,7 @@
         </div>
         <div id="map"></div>
         
-            <a href ='https://goo.gl/maps/zZKfoPc3t54uZov37' class="btn btn-primary mt-4" style='font-weight: 600;  background-color:#FFDB6D;color:black;text-transform: uppercase;'> Get Directions </a>
+            <a href ='https://maps.app.goo.gl/qNRwa9URnVFyBL7k6' class="btn btn-primary mt-4" style='font-weight: 600;  background-color:#FFDB6D;color:black;text-transform: uppercase;'> Get Directions </a>
           </div>
         </div>
 
@@ -186,7 +186,7 @@
     iconSize: [20, 20], // Size of the icon
 });
   // Initialize the map
-  var map = L.map('map').setView([19.130605,72.822679], 17); // Replace with your location's coordinates and desired zoom level
+  var map = L.map('map').setView([19.13048026023803, 72.82272161507149], 17); // Replace with your location's coordinates and desired zoom level
 
   // Add a tile layer from OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -194,14 +194,14 @@
   }).addTo(map);
 
   // Add a marker to the map
-  L.marker([19.130605, 72.822679]).addTo(map) // Replace with your location's coordinates
+  L.marker([19.13048026023803, 72.82272161507149]).addTo(map) // Replace with your location's coordinates
       .bindPopup('VBB LAW FIRM Office'); // Replace with a popup message if desired
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: ''
 }).addTo(map);
-var marker = L.marker([19.130605, 72.822679],{ icon: customIcon }).addTo(map);
-// marker.bindPopup("<b>VBB LAW FIRM").openPopup();
+var marker = L.marker([19.13048026023803, 72.82272161507149],{ icon: customIcon }).addTo(map);
+marker.bindPopup("Swapna Sakar Society").openPopup();
 L.control.zoom({ position: 'bottomright' }).addTo(map);
 L.control.scale().addTo(map);
 
