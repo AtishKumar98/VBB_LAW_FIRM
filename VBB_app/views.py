@@ -19,6 +19,7 @@ def index(request):
         email['From']="noreply@VBBLAWFIRM.co"
         # email['To']="vbblegalmumbai@gmail.com"
         email['To']="atishkumar31518@gmail.com"
+        to = "atishkumar31518@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
         #   mails_to = ' , '.join(mail_from) if True else you
@@ -34,7 +35,7 @@ def index(request):
         # server.starttls(context=simple_email_context)
         server.login('atishkumar@atishkumar.co.in',EMAIL_PASSWORD)
         #   server.login('AKIAYNJZLMUQQXPKMG5B','BItsVQqmsAojywKw8YzfvgpMbPyNBhOXgJ1e0Iz/OJB3')
-        server.sendmail('atishkumar@atishkumar.co.in', useremail, email.as_string())
+        server.sendmail('atishkumar@atishkumar.co.in',email['To'] ,email.as_string())
         print('SENT MAIL','FROM',email['From'],email['TO'],useremail ,msg_body)
         server.quit()
     context = {'home':'home'}
