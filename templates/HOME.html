@@ -2,7 +2,27 @@
   {% load static %}
 
   {% block content %}
+<style>
+  #loader {
+            display: none;
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -40px;
+            margin-left: -40px;
+        }
 
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+</style>
   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -180,7 +200,7 @@
     <center>
       <h4 style="font-weight: 600;">REQUEST CALL BACK</h4>
     </center>
-    <form method="POST" action="/">
+    <form method="POST" action="/" id="myForm">
       {% csrf_token %}
       <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
@@ -201,12 +221,12 @@
         <label for="areaOfInterest" class="form-label">Area of Interest:</label>
         <select id="areaOfInterest" name="areaOfInterest" class="form-select" required>
           <option value="" disabled selected>Select an option</option>
-          <option value="Law Option 1">Criminal Cases</option>
-          <option value="Law Option 2">Civil cases</option>
-          <option value="Law Option 3">Family and Matrimonial cases</option>
-          <option value="Law Option 4">Corprate and Industry cases</option>
-          <option value="Law Option 4">Special Acts</option>
-          <option value="Law Option 4">Other</option>
+          <option value="Criminal Cases">Criminal Cases</option>
+          <option value="Civil cases">Civil cases</option>
+          <option value="Family and Matrimonial cases">Family and Matrimonial cases</option>
+          <option value="Corprate and Industry cases">Corprate and Industry cases</option>
+          <option value="Special Acts">Special Acts</option>
+          <option value="Other">Other</option>
           <!-- Add more options as needed -->
         </select>
       </div>
@@ -215,10 +235,11 @@
         <label for="message" class="form-label">Message:</label>
         <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
       </div>
-<center>
-  <button type="submit" class="btn btn-primary mt-4" style="font-weight: 600; background-color:#FFDB6D;color:black;text-transform: uppercase;">Submit</button>
-</center>
+      <center>
+        <button type="submit" class="btn btn-primary mt-4" style="font-weight: 600; background-color:#FFDB6D;color:black;text-transform: uppercase;">Submit</button>
+      </center>
     </form>
+    <div id="loader"></div>
   </div>
 </div>
 </div>
@@ -290,8 +311,47 @@
 <script defer src="../static/dist/js/Main.js">
 
 </script>
-
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
+  document.getElementById('myForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    // Show loader while the email is being sent
+    loader.style.display = 'block';
+
+    try {
+        // Send an AJAX request to the server using the dynamically generated URL
+        const response = await fetch('{% url "home" %}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': '{{ csrf_token }}',
+            },
+            body: new URLSearchParams(new FormData(this)),
+        });
+
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            alert('Email sent successfully!');
+        } else {
+            alert('Error sending email: ' + data.message);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error sending email. Please try again.');
+    } finally {
+        // Hide loader after a short delay to ensure it's visible while the alert is shown
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 1);
+    }
+});
+
+</script>
+<script>
+ 
         //   $(document).ready(function() {
         //     // Check if the user has visited the site in this session
         //     if (!sessionStorage.getItem('visited')) {

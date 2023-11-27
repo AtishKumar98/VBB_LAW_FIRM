@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 import smtplib
 from django.http import HttpResponse, HttpResponseNotFound
 from VBB_project.settings import EMAIL_PASSWORD
-
+from django.http import JsonResponse
 
 # Create your views here.
 def index(request):
@@ -35,9 +35,16 @@ def index(request):
         # server.starttls(context=simple_email_context)
         server.login('atishkumar@atishkumar.co.in',EMAIL_PASSWORD)
         #   server.login('AKIAYNJZLMUQQXPKMG5B','BItsVQqmsAojywKw8YzfvgpMbPyNBhOXgJ1e0Iz/OJB3')
-        server.sendmail('atishkumar@atishkumar.co.in',email['To'] ,email.as_string())
-        print('SENT MAIL','FROM',email['From'],email['TO'],useremail ,msg_body)
-        server.quit()
+        
+        try:
+            server.sendmail('atishkumar@atishkumar.co.in',email['To'] ,email.as_string())
+            print('SENT MAIL','FROM',email['From'],email['TO'],useremail ,msg_body)
+            server.quit()
+            return JsonResponse({"status": "success"})
+        except Exception as e:
+            return JsonResponse({"status": "Error", "message": str(e)})
+        # alert('Email sent successfully!');
+        
     context = {'home':'home'}
     return render(request, "HOME.html",context)
 
