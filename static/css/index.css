@@ -462,6 +462,12 @@ margin-top: 3%;
   }
 }
 
+@media (max-width: 1408px){
+.curved_line{
+  width: 10%;margin-left: -80%; margin-top: -.5%;
+}
+
+}
 /* Hide the toggle button on larger screens */
 @media (min-width: 900px) {
   .navbar-toggler {
@@ -471,7 +477,7 @@ margin-top: 3%;
   .navbar-toggler {
     border: 2px solid white;
 
-
+   
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
