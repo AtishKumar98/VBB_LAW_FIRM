@@ -3,6 +3,40 @@
 {% block content %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <style>
+  #loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #FFDB6D;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+    z-index: 9998;
+    display: none;
+}
   .whatsapp{
     display: flex;
     flex-direction: row;
@@ -123,7 +157,7 @@
             <center>
               <h3 style="font-weight: 600;  font-family: 'Poppins', 'sans-serif';">GET IN TOUCH</h3>
             </center>
-            <form method="POST" action="/">
+            <form method="POST" action="/contact/" id="myForm">
               {% csrf_token %}
               <div class="mb-3 mt-5">
                 <label for="name" class="form-label">Name:</label>
@@ -147,6 +181,7 @@
           <button type="submit" class="btn btn-primary mt-4"style='background-color:#FFDB6D;color:black;text-transform: uppercase;font-weight: 600;'>Submit</button>
         </center>
             </form>
+            
           </div>
         </div>
 
@@ -177,6 +212,12 @@
 
     </div>
 </div>
+<div id="loader-container">
+  <div id="loader"></div>
+</div>
+
+<div id="blur-overlay"></div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
@@ -204,6 +245,67 @@ var marker = L.marker([19.13048026023803, 72.82272161507149],{ icon: customIcon 
 marker.bindPopup("Swapna Sakar Society").openPopup();
 L.control.zoom({ position: 'bottomright' }).addTo(map);
 L.control.scale().addTo(map);
+
+</script>
+<script>
+  document.getElementById('myForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    // Show loader while the email is being sent
+    loader.style.display = 'block';
+
+    try {
+        // Send an AJAX request to the server using the dynamically generated URL
+        const response = await fetch('{% url "home" %}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': '{{ csrf_token }}',
+            },
+            body: new URLSearchParams(new FormData(this)),
+        });
+
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            alert('Thank you for contacting VBB LEGAL Your request is submitted successfully, we will get back to you shortly.');
+            
+        } else {
+            alert('Error sending email: ' + data.message);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error sending email. Please try again.');
+    } 
+    finally {
+        // Hide loader after a short delay to ensure it's visible while the alert is shown
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 1);
+    }
+});
+
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('myForm');
+    var loaderContainer = document.getElementById('loader-container');
+    var blurOverlay = document.getElementById('blur-overlay');
+
+    form.addEventListener('submit', function(event) {
+        // Show loader and blur overlay while the form is being submitted
+        loaderContainer.style.display = 'block';
+        blurOverlay.style.display = 'block';
+
+        // Simulate form submission delay (replace this with your actual form submission logic)
+        setTimeout(function() {
+            // Hide loader and blur overlay after the form submission is complete
+            loaderContainer.style.display = 'none';
+            blurOverlay.style.display = 'none';
+        }, 2300); // Replace 2000 with the actual delay time in milliseconds
+    });
+});
 
 </script>
 {% endblock content %}

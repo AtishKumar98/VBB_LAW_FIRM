@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
@@ -163,6 +163,41 @@ def profile_view(request, profile_id):
         return render(request, 'profile_not_found.html')
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        useremail = request.POST.get('email')
+        phone = request.POST.get('phone')
+        areaOfInterest = request.POST.get('areaOfInterest')
+        message = request.POST.get('message')
+        email = MIMEMultipart()
+        email.set_unixfrom('author')
+        email['From']="noreply@VBBLAWFIRM.co"
+        # email['To']="vbblegalmumbai@gmail.com"
+        email['To']="atishkumar31518@gmail.com"
+        to = "atishkumar31518@gmail.com"
+        email['Subject'] = 'Mail Details from User VBB Law Firm'
+        #   bcc = "siddhu.dhangar@tiss.edu"
+        #   mails_to = ' , '.join(mail_from) if True else you
+        # subject_txt = 'Registration Confirmation for %s' %(conference_title)
+        # subject_txt = 'You are registered as Kalaakaar'
+        # BillingName = str(conf_detail_obj.cr_title) + ' ' +  str(conf_detail_obj.cr_fullname) 
+        # msg_body = '\n%s,\n\n A payment of Rs.%s received towards the registration fees for the "%s". Thank you for the payment. Your Registration is confirmed and the registration number is %s.\n\n Note: This is an auto-generated mail, please dot not respond to this email.'%(BillingName,request.POST['amt'],conference_title,request.POST['mer_txn'])
+        msg_body = f'<h3>Hello Team, User has requested a callback.</h3><br/><br/><b>Kindly note Information given below</b> <br/><br/>Name of the client : {name} , <br/> Phone Number: {phone} , <br/> Interest: {areaOfInterest}, <br/> Messsage: {message} <h3><br> ////Signature////'
+        # msg = 'Subject:{}\n\n{}'.format(email['Subject'], msg_body)
+        email.attach(MIMEText(msg_body,"html"))
+        server = smtplib.SMTP_SSL('smtpout.secureserver.net',465)
+        server.ehlo()
+        # server.starttls(context=simple_email_context)
+        server.login('atishkumar@atishkumar.co.in',EMAIL_PASSWORD)
+        #   server.login('AKIAYNJZLMUQQXPKMG5B','BItsVQqmsAojywKw8YzfvgpMbPyNBhOXgJ1e0Iz/OJB3')
+        
+        try:
+            server.sendmail('atishkumar@atishkumar.co.in',email['To'] ,email.as_string())
+            print('SENT MAIL','FROM',email['From'],email['TO'],useremail ,msg_body)
+            server.quit()
+            return redirect('/contact/')
+        except Exception as e:
+            return redirect('/contact/')
     context = {'contact':'contact'}
     return render(request,'contact.html',context)
 
