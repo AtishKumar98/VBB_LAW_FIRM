@@ -345,7 +345,12 @@ margin-left: 7%;
 
 
 
-
+{% if request.GET.openDropdown %}
+    {% if request.GET.openDropdown == "0" or request.GET.openDropdown == "1" or request.GET.openDropdown == "2" or request.GET.openDropdown == "3" or request.GET.openDropdown == "4" %}
+        <!-- Add noindex meta tag for pages with dropdown -->
+        <meta name="robots" content="noindex">
+    {% endif %}
+{% endif %}
 
 
 
