@@ -1,6 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<head>
+    {% if  profile.name ==  'Adv. Vinayak D. Mishra' %}
+    <title>VBB LEGAL - Advocate Vinayak D Mishra - Criminal Cases, Bail Matters, Writ Petition in High &  Supreme Court.  </title>
+    <meta name="description" content="Advocate Vinayak D Mishra Deals in Criminal Cases like Criminal Defense Litigation, Bail and Anticipatory bail Applications, Defense Felony Litigation, Criminal trials etc, Also Arguing counsel in Criminal Writ petitions In Bombay High Court, including various High Courts and Supreme Court of India. ">
+    {% elif profile.name ==  'Adv. Binita Y. Sharma' %}
+    <title> VBB LEGAL - Advocate Binita Y Sharma -138 NI Cheque Bounce Cases, Divorce cases, appeal in High Court and Supreme Court of India. </title>
+    <meta name="description" content="Advocate Vinayak D Mishra Deals in Criminal Cases like Criminal Defense Litigation, Bail and Anticipatory bail Applications, Defense Felony Litigation, Criminal trials etc, Also Arguing counsel in Criminal Writ petitions In Bombay High Court, including various High Courts and Supreme Court of India. ">
+    {% elif profile.name ==  'Adv. B D Tripathi' %}
+    <title> VBB LEGAL - Advocate B D Tripathi - Senior Advocate Deals in All Criminal and Civil Cases,in all Courts across Mumbai and Navi Mumbai.  </title>
+    <meta name="description" content="Advocate B. D Tripathi deals in every major and Minor Aspects of legal Battle and carries with himself more than 28 years of Experience dealing with All special Acts cases such as NDPS cases, Cyber law Etc. In all over MM, JMFC, sessions and District Courts in Mumbai and Navi Mumbai Maharashtra. ">
+    {% elif profile.name ==  'Adv. Pritesh H. Sahu' %}
+    <title> VBB LEGAL - Advocate Pritesh H Sahu </title>
+    <meta name="description" content="Advocate Pritesh H. Sahu Deals in property Disputes, Banking and Insurance laws, Land and property disputes, and stands as mediator or counseling advocate in Family Disputes. In all courts accorss Mumbai And Navi Mumbai.  ">
+    {% elif profile.name ==  'Adv. Dhwani S. Rughani' %}
+    <title> VBB LEGAL - Advocate Dhwani S. Rughani -  Legal Associate - VBB LEGAL </title>
+    <meta name="description" content="Advocates Dhwani S. Rughani Deals with NCLT matters, Labour and Industrial Dispute matters,  and practices in all courts and Law Tribunals across Mumbai Maharashtra.">
+   {% else %}
+   <title> VBB LEGAL - Our Team </title>
+    <meta name="description" content="Advocates Dhwani S. Rughani Deals with NCLT matters, Labour and Industrial Dispute matters,  and practices in all courts and Law Tribunals across Mumbai Maharashtra.">
+    {% endif %}
 <style>
      .full_page{
         display: flex;
