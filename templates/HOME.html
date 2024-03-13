@@ -103,7 +103,7 @@
           <img src ='../static/images/section_line.png' style="width: 60%;">
         </div>
         <div class="heading_button">
-          <a href = "/our_services/">
+          <a href = "/our-services/">
           <button class = 'btn btn-dark' style=" margin-top: 24%;"> View all <i class='bx bx-right-arrow-alt' style='color:goldenroad; width:10%'></i></button></a>
         </div>
       </div>
@@ -111,27 +111,27 @@
 
         <div class="circles_services">
           <div class="image_circle">
-            <a href ='/our_services/?openDropdown=0'>
+            <a href ='/our-services/?openDropdown=0'>
         <img src="../static/images/Group_27.png" alt="" class="src">
       </a>
       </div>
       <div class="image_circle">
-        <a href ='/our_services/?openDropdown=1'>
+        <a href ='/our-services/?openDropdown=1'>
           <img src="../static/images/Group_28.png" alt="" class="src">
         </a>
       </div>
       <div class="image_circle">
-        <a href ='/our_services/?openDropdown=2'>
+        <a href ='/our-services/?openDropdown=2'>
           <img src="../static/images/Group_32.png" alt="" class="src">
         </a>
       </div>
       <div class="image_circle">
-        <a href ='/our_services/?openDropdown=3'>
+        <a href ='/our-services/?openDropdown=3'>
           <img src="../static/images/Group_33.png" alt="" class="src">
         </a>
       </div>
       <div class="image_circle">
-        <a href ='/our_services/?openDropdown=4'>
+        <a href ='/our-services/?openDropdown=4'>
           <img src="../static/images/Group_34.png" alt="" class="src">
         </a>
       </div>
@@ -193,11 +193,11 @@
     </div>
    <div class="block_for_social_platforms">
 
-     <a href = 'https://www.instagram.com/vbblegal/'><img src="{% static 'images/Instagram2.png' %}"   class= 'block_under_sp' alt="Background Image" style=''></a>
-     <a href = 'https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU'><img src="{% static 'images/Facebook2.png' %}"    class= 'block_under_sp' alt="Background Image" style=''></a>
-     <a href = 'https://twitter.com/vbblegal'><img src="{% static 'images/Twitter2.png' %}"     class= 'block_under_sp' alt="Background Image" style=''></a>
-     <a href = 'https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in'><img src="{% static 'images/LinkedIn2.png' %}"    class= 'block_under_sp' alt="Background Image" style=''></a>
-     <a href = 'https://youtube.com/@vbblegal?si=7r-QWwq7W-KXMk0o'><img src="{% static 'images/Youtube2.png' %}" class= 'block_under_sp' alt="Background Image" style=''></a>
+    <a href='https://www.instagram.com/vbblegal/' target='_blank'><img src="{% static 'images/Instagram2.png' %}" class='block_under_sp' alt="Instagram" style=''></a>
+    <a href='https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU' target='_blank'><img src="{% static 'images/Facebook2.png' %}" class='block_under_sp' alt="Facebook" style=''></a>
+    <a href='https://twitter.com/vbblegal' target='_blank'><img src="{% static 'images/Twitter2.png' %}" class='block_under_sp' alt="Twitter" style=''></a>
+    <a href='https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in' target='_blank'><img src="{% static 'images/LinkedIn2.png' %}" class='block_under_sp' alt="LinkedIn" style=''></a>
+    <a href='https://youtube.com/@vbblegal?si=7r-QWwq7W-KXMk0o' target='_blank'><img src="{% static 'images/Youtube2.png' %}" class='block_under_sp' alt="Youtube" style=''></a>
     
     </div>
     
@@ -375,10 +375,12 @@
 
         const data = await response.json();
 
-        if (data.status === 'success') {
+        if (data.status === 'success'){
+            this.reset();
             alert('Thank you for contacting VBB LEGAL Your request is submitted successfully, we will get back to you shortly.');
             
-        } else {
+        } 
+        else {
             alert('Error sending email: ' + data.message);
         }
     } catch (error) {

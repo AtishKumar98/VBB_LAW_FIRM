@@ -18,7 +18,7 @@ def index(request):
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
         # email['To']="vbblegalmumbai@gmail.com"
-        email['To']="vbblegalmumbai@gmail.com"
+        email['To']="atishkumar31518@gmail.com"
         to = "atishkumar31518@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
@@ -62,7 +62,7 @@ def ourteam(request):
     return render(request,'our_team.html',context)
 
 profiles = {
-    'profile1': {
+    'Vinayak-Mishra': {
         'name': 'Adv. Vinayak D. Mishra',
         'desg': 'Founder and Partner - VBB Legal',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
@@ -87,7 +87,7 @@ An influential figure in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv.
 """
 ,
     },
-    'profile2': {
+    'Binita-Sharma': {
         'name': 'Adv. Binita Y. Sharma',
         'desg': 'Founder and Partner - VBB Legal',
         'role': 'Advocate Bombay High Court and Supreme Court of india',
@@ -104,7 +104,7 @@ Based in Mumbai, Thane, Navi Mumbai, and surrounding areas, Adv. Binita Sharma h
 """ ,
     },
 
-     'profile3': {
+     'B-D-Tripathi': {
         'name': 'Adv. B D Tripathi',
         'desg': 'Senior Associate',
         'role': 'Advocate Bombay High Court and Supreme Court of India.',
@@ -119,7 +119,7 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
 """ ,
     },
 
-     'profile4': {
+     'Pritesh-Sahu': {
         'name': 'Adv. Pritesh H. Sahu',
         'desg': 'Legal Associate',
         'role': 'Advocate Bombay High Court',
@@ -133,7 +133,7 @@ A visionary legal mind, Adv. Tripathi's profound expertise and unwavering commit
 """ ,
     },
 
-     'profile5': {
+     'Dhwani-Rughani': {
         'name': 'Adv. Dhwani S. Rughani',
         'desg': 'Legal Associate',
         'role': 'Advocate Bombay High Court',
@@ -173,7 +173,7 @@ def contact(request):
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
         # email['To']="vbblegalmumbai@gmail.com"
-        email['To']="vbblegalmumbai@gmail.com"
+        email['To']="atishkumar31518@gmail.com"
         to = "atishkumar31518@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
@@ -193,7 +193,7 @@ def contact(request):
         
         try:
             server.sendmail('atishkumar@atishkumar.co.in',email['To'] ,email.as_string())
-            print('SENT MAIL','FROM',email['From'],email['TO'],useremail ,msg_body)
+            print('SENT MAIL','FROM',email['From'],email['To'],useremail ,msg_body)
             server.quit()
             return redirect('/contact/')
         except Exception as e:
