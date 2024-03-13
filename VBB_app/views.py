@@ -18,7 +18,7 @@ def index(request):
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
         # email['To']="vbblegalmumbai@gmail.com"
-        email['To']="atishkumar31518@gmail.com"
+        email['To']="vbblegalmumbai@gmail.com"
         to = "atishkumar31518@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
@@ -173,7 +173,7 @@ def contact(request):
         email.set_unixfrom('author')
         email['From']="noreply@VBBLAWFIRM.co"
         # email['To']="vbblegalmumbai@gmail.com"
-        email['To']="atishkumar31518@gmail.com"
+        email['To']="vbblegalmumbai@gmail.com"
         to = "atishkumar31518@gmail.com"
         email['Subject'] = 'Mail Details from User VBB Law Firm'
         #   bcc = "siddhu.dhangar@tiss.edu"
