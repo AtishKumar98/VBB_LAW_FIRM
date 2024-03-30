@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta property="og:image" content="/static/images/Mask_Group_1.png">
     {% load static %}
-    <meta property="og:image" content="/static/images/Mask_Group_1.png">
     {% if home %}
     <title>VBB LEGAL - Criminal law, Civil law & Corporate legal services in Mumbai, Navi Mumbai and India.</title>
     <meta name="description" content="VBB LEGAL serves to its clients with best-in-class legal services in Mumbai, Navi Mumbai. We are dealing with all kinds of Criminal defense and civil Litigation Under one Roof.">
@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css.map' %}">
   <link rel ="icon" href = "/static/images/Mask_Group_1.png">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static '/images/Mask_Group_1.png' %}">
   <link rel ="stylesheet" href = "{% static 'css/index.css' %}">
   <link rel="stylesheet" href="./dist/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="./dist/css/bootstrap.rtl.min.css.map">
-  
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!-- Boxicons CSS -->
@@ -103,7 +103,20 @@
   {% block content %}
   {% endblock content %}
   {% include 'footer.html'%}
-
+  <script>
+    (function() {
+        var images = document.querySelectorAll('img[loading="lazy"]');
+        if ('loading' in HTMLImageElement.prototype) {
+            images.forEach(function(img) {
+                img.setAttribute('loading', 'lazy');
+            });
+        } else {
+            var script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+    })();
+</script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src ="{% static 'dist/js/bootstrap.min.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
