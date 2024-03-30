@@ -2,6 +2,9 @@
 {% load static %}
 {% block content %}
 <head>
+    {% block image %}
+<meta property="og:image" content="{% static 'css/index.css' %}">
+{% endblock %}
 <style>
     .img_VBB_DEPARTMENT{
         width: 80%;
