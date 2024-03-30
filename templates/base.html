@@ -6,13 +6,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    
-    {% if home %}
-
     <meta property="og:image" content="../static/images/Mask_Group_1.png">
+    <!-- All Meta links as per pages -->
+    {% if home %}
+    
     <title>VBB LEGAL - Criminal law, Civil law & Corporate legal services in Mumbai, Navi Mumbai and India.</title>
     <meta name="description" content="VBB LEGAL to its clients with best-in-class legal services in Mumbai, Navi Mumbai. We are dealing with all kinds of Criminal defense and civil Litigation Under one Roof.">
     {% endif %}
+
+ 
     {% if abouts_us  %}
     <title>About VBB LEGAL offering and legal expsrtise Utilities it's more than 28 Years of Rich legal experience to serve it's best in class legal services all across India  </title>
     <meta name="description" content="We at VBB LEGAL Serves with its legal expertise to its clients and help them out in their legal battles in Criminal High profile Cases, Civil and Corporate also resolves industrial and family Disputes. ">
@@ -23,8 +25,23 @@
    <title>VBB LEGAL Services - Criminal Defence Litigation, Civil Rights Litigation, 138 NI Act Cheque Bounce Cases, NDPS cases, Family and Divorce Lawyers, Bail Applications, Corporate Legal Services.</title>
    <meta name="description" content="VBB LEGAL deals in Criminal Cases, Bail and Anticipatory bail Matters, criminal Defence Litigation, Civil and property cases, Cheque Bounce Cases, Divorce and Maintenance Cases, MAHA RERA Matters, and many more, Legal services in Mumbai and Navi Mumbai, Maharashtra, and all across India. ">  
    {% endif %}  
+
+   {% if ourteam  %}
+   <title>VBB LEGAL Services - Criminal Defence Litigation, Civil Rights Litigation, 138 NI Act Cheque Bounce Cases, NDPS cases, Family and Divorce Lawyers, Bail Applications, Corporate Legal Services.</title>
+   <meta name="description" content="VBB LEGAL deals in Criminal Cases, Bail and Anticipatory bail Matters, criminal Defence Litigation, Civil and property cases, Cheque Bounce Cases, Divorce and Maintenance Cases, MAHA RERA Matters, and many more, Legal services in Mumbai and Navi Mumbai, Maharashtra, and all across India. ">  
+   {% endif %} 
+
+   {% if contact  %}
+   <title>VBB LEGAL Services - Criminal Defence Litigation, Civil Rights Litigation, 138 NI Act Cheque Bounce Cases, NDPS cases, Family and Divorce Lawyers, Bail Applications, Corporate Legal Services.</title>
+   <meta name="description" content="VBB LEGAL deals in Criminal Cases, Bail and Anticipatory bail Matters, criminal Defence Litigation, Civil and property cases, Cheque Bounce Cases, Divorce and Maintenance Cases, MAHA RERA Matters, and many more, Legal services in Mumbai and Navi Mumbai, Maharashtra, and all across India. ">  
+   {% endif %} 
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   {% if whyus  %}
+   <title>VBB LEGAL Services - Criminal Defence Litigation, Civil Rights Litigation, 138 NI Act Cheque Bounce Cases, NDPS cases, Family and Divorce Lawyers, Bail Applications, Corporate Legal Services.</title>
+   <meta name="description" content="VBB LEGAL deals in Criminal Cases, Bail and Anticipatory bail Matters, criminal Defence Litigation, Civil and property cases, Cheque Bounce Cases, Divorce and Maintenance Cases, MAHA RERA Matters, and many more, Legal services in Mumbai and Navi Mumbai, Maharashtra, and all across India. ">  
+   {% endif %} 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css' %}">
