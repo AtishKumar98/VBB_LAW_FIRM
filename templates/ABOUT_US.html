@@ -1,8 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
 <head>
-    <meta property="og:image" content="/static/images/Mask_Group_1.png">
+    {% block social_meta_tags %}
+<meta property="og:title" content="About VBB LEGAL">
+<meta property="og:description" content="We at VBB LEGAL serve with legal expertise to our clients and help them out in their legal battles in Criminal High profile Cases, Civil and Corporate.">
+<meta property="og:image" content="../static/images/Mask_Group_1.png">
+<meta property="og:url" content="https://vbblegal.in/about-us">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About VBB LEGAL">
+<meta name="twitter:description" content="We at VBB LEGAL serve with legal expertise to our clients and help them out in their legal battles in Criminal High profile Cases, Civil and Corporate.">
+<meta name="twitter:image" content="../static/images/Mask_Group_1.png">
+{% endblock %}
+    <meta property="og:image" content="../static/images/Mask_Group_1.png">
 <style>
     .img_VBB_DEPARTMENT{
         width: 80%;
