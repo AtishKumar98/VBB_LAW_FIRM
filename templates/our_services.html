@@ -4,7 +4,13 @@
 <head>
   <title>VBB LEGAL Services - Criminal Defence Litigation, Civil Rights Litigation, 138 NI Act Cheque Bounce Cases, NDPS cases, Family and Divorce Lawyers, Bail Applications, Corporate Legal Services.</title>
   <meta name="description" content="VBB LEGAL deals in Criminal Cases, Bail and Anticipatory bail Matters, criminal Defence Litigation, Civil and property cases, Cheque Bounce Cases, Divorce and Maintenance Cases, MAHA RERA Matters, and many more, Legal services in Mumbai and Navi Mumbai, Maharashtra, and all across India. ">
-
+  <!-- Add noindex meta tag for pages with VBB service dropdown -->
+  <meta name="robots" content="noindex">
+  {% if request.GET.openDropdown %}
+  {% if request.GET.openDropdown == "0" or request.GET.openDropdown == "1" or request.GET.openDropdown == "2" or request.GET.openDropdown == "3" or request.GET.openDropdown == "4" %}
+  <meta name="robots" content="noindex">
+  {% endif %}
+{% endif %}
 <style>
     #card-list{
         height: 16vh;
@@ -332,7 +338,7 @@ margin-left: 7%;
     // Function to get query parameters from URL
     function getQueryParams() {
       const queryParams = new URLSearchParams(window.location.search);
-      return queryParams.get("openDropdown");
+      return queryParams.get("services");
     }
 
     // Check if the URL parameter matches a button and open the corresponding dropdown
@@ -349,12 +355,7 @@ margin-left: 7%;
 
 
 
-{% if request.GET.openDropdown %}
-    {% if request.GET.openDropdown == "0" or request.GET.openDropdown == "1" or request.GET.openDropdown == "2" or request.GET.openDropdown == "3" or request.GET.openDropdown == "4" %}
-        <!-- Add noindex meta tag for pages with dropdown -->
-        <meta name="robots" content="noindex">
-    {% endif %}
-{% endif %}
+
 
 
 
